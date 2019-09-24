@@ -20,6 +20,7 @@
     "express-request-proxy": "^2.2.2",
     "express-sslify": "^1.2.0",
     "lodash": "^4.17.11",
+    "minipass": "^2.8.5",
     "node-gyp": "^5.0.3",
     "nodemailer": "^4.6.8",
     "react": "^16.2.0",
