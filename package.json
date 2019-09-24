@@ -7,7 +7,8 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "stylelint": "stylelint ./src/**/*.css --fix"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -28,6 +29,9 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.5",
     "lint-staged": ">=8",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-rational-order": "^0.1.2"
   }
 }
