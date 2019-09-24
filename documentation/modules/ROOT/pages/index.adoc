@@ -1,0 +1,134 @@
+= Normandie Pharma Group
+
+image:./public/assets/images/header/npgr.svg[Logo of the
+project]
+
+=== Developing
+
+==== Built With
+
+===== Front (UI) dependencies
+
+* https://reactjs.org/[React] : A JavaScript library for building user
+interfaces
+* https://rematch.gitbooks.io/rematch/[Rematch] : Redux best practice
+without boilerplate
+* https://lodash.com/[Lodash] : A modern JavaScript utility library
+delivering modularity, performance & extras.
+* https://momentjs.com/[Moment] : Parse, validate, manipulate, and
+display dates and times in JavaScript.
+
+===== Back (server) dependencies
+
+* https://expressjs.com/[Express] : Fast, unopinionated, minimalist web
+framework for Node.js
+
+===== Dev (build) dependencies
+
+* Webpack
+* Babel
+* Jest
+* Enzyme
+
+==== Prerequisites
+
+Install the following tools : * https://git-scm.com/downloads[Git] : A
+distributed version control system.
+
+* https://nodejs.org/en/download/[NodeJS]: a JavaScript runtime built on
+Chrome’s V8 JavaScript engine. It includes https://www.npmjs.com/[npm]
+as a package manager for JavaScript.
+* https://www.algolia.com[Algolia] : A fast, Reliable and Modern Search
+and Discovery. Ask your manager to create you an Algolia account. Then
+you need to set up ALGOLIA_APP_ID and ALGOLIA_API_KEY variables in the
+.env file. You can find those variables in the API keys tab after login
+with your Algolia account.
+
+==== Setting up Dev
+
+Here’s a brief intro about what a developer must do in order to start
+developing the project further:
+
+
+Setup your env variables:
+- Copy .env.template to a ".env" file
+- Update the env variables values
+
+Install it and run:
+[source,shell]
+```bash
+npm install
+npm run start:dev
+```
+
+Before pushing Merge Requests, please ensure that the following commands are successful:
+
+```bash
+npm run lint
+npm run build
+```
+
+
+==== TODO Deploying / Publishing
+
+give instructions on how to build and release a new version In case
+there’s some step you have to take that publishes this project to a
+server, this is the right time to state it.
+
+[source,shell]
+----
+packagemanager deploy your-project -s server.com -u username -p password
+----
+
+And again you’d need to tell what the previous code actually does.
+
+=== TODO Versioning
+
+We use http://semver.org/[SemVer] for versioning. For the versions
+available, see the link:/tags[link to tags on this repository].
+
+=== TODO Configuration
+
+Here you should write what are all of the configurations a user can
+enter when using the project.
+
+=== TODO Tests
+
+[source,shell]
+----
+npm test
+----
+
+Run the Jest unit tests. Note that a git hook run this tests before
+every push.
+
+=== TODO Type checking / Linting
+
+[source,shell]
+----
+npm lint
+----
+
+Run the Flow type checking and ESLint linting over the source codebase.
+
+=== TODO Structure and Naming
+
+....
+   .
+   ├── .githooks
+   ...
+   ├── public          # FRONT END
+   |   ├── assets      ## images
+   |   ├── favicons    ## favicons
+   |   ├── javascripts ## js source
+   |   └── scss        ## SCSS (style)
+   ├── scripts         # build or git hooks scripts
+   ├── server          # BACK END
+   |   ├── middlewares
+   |   ├── models
+   |   ├── routes
+   |   ├── utils
+   |   └── views
+   ├── src             # SVG sources
+   ├── tests           # Jest unit tests
+....

@@ -1,0 +1,4 @@
+.Normandie Pharma Group
+* xref:index.adoc[Home]
+* xref:razzle.adoc[Razzle]
+
