@@ -28,8 +28,8 @@ deploy_dev:
     - git config --global user.email "tech@valwin.fr"
     - git config --global user.name "GitLab CI"
   script:
-    - git remote add cleverstaging https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_DEV.git
-    - git push --verbose --force cleverstaging HEAD:master 2>&1 | grep -e 'remote:' -e '->'
+    - git remote add cleverdev https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_DEV.git
+    - git push --verbose --force cleverdev HEAD:master 2>&1 | grep -e 'remote:' -e '->'
 
 deploy_staging:
   stage: deploy
