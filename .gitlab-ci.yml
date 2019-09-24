@@ -7,20 +7,31 @@ cache:
 
 # Definition of steps to perform
 stages:
-  - validation
+  # - validation
   - deploy
 
-validation:
-  type: validation
-  before_script:
-    - npm ci
-    - npm run build
-  script:
-    - npm run lint
-    - npm run test
+# validation:
+#   type: validation
+#   before_script:
+#     - npm ci
+#     - npm run build
+#   script:
+#     - npm run lint
+#     - npm run test
 
 # Template for deployments
-deploy_master:
+deploy_dev:
+  stage: deploy
+  only:
+    - dev
+  before_script:
+    - git config --global user.email "tech@valwin.fr"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add cleverstaging https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_DEV.git
+    - git push --verbose --force cleverstaging HEAD:master 2>&1 | grep -e 'remote:' -e '->'
+
+deploy_staging:
   stage: deploy
   only:
     - staging
