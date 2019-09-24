@@ -1,0 +1,5 @@
+name: np-group
+title: Normandie Pharma Groupement
+version: latest
+nav:
+  - modules/ROOT/nav.adoc

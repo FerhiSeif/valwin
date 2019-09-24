@@ -1,0 +1,55 @@
+image: node:lts
+
+cache:
+  untracked: true
+  paths:
+    - node_modules/
+
+# Definition of steps to perform
+stages:
+  # - validation
+  - deploy
+
+# validation:
+#   type: validation
+#   before_script:
+#     - npm ci
+#     - npm run build
+#   script:
+#     - npm run lint
+#     - npm run test
+
+# Template for deployments
+deploy_dev:
+  stage: deploy
+  only:
+    - dev
+  before_script:
+    - git config --global user.email "tech@valwin.fr"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add cleverdev https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_DEV.git
+    - git push --verbose --force cleverdev HEAD:master 2>&1 | grep -e 'remote:' -e '->'
+
+deploy_staging:
+  stage: deploy
+  only:
+    - staging
+  before_script:
+    - git config --global user.email "tech@valwin.fr"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add cleverstaging https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID.git
+    - git push --verbose --force cleverstaging HEAD:master 2>&1 | grep -e 'remote:' -e '->'
+
+deploy_prod:
+  stage: deploy
+  when: manual
+  only:
+    - master
+  before_script:
+    - git config --global user.email "tech@valwin.fr"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add clever https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_PROD.git
+    - git push --verbose --force clever HEAD:master 2>&1 | grep -e 'remote:' -e '->'
