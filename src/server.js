@@ -1,16 +1,19 @@
-import App from "./App";
-import React from "react";
-import { StaticRouter } from "react-router-dom";
-import express from "express";
-import { renderToString } from "react-dom/server";
+import App from './App';
+import React from 'react';
+import { StaticRouter } from 'react-router-dom';
+import express from 'express';
+import { renderToString } from 'react-dom/server';
+import { Helmet } from 'react-helmet';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
+const helmet = Helmet.renderStatic();
+
 const server = express();
 server
-  .disable("x-powered-by")
+  .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .get("/*", (req, res) => {
+  .get('/*', (req, res) => {
     const context = {};
     const markup = renderToString(
       <StaticRouter context={context} location={req.url}>
@@ -23,24 +26,27 @@ server
     } else {
       res.status(200).send(
         `<!doctype html>
-    <html lang="">
+    <html lang="fr" ${helmet.htmlAttributes.toString()}>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <title>Welcome to Razzle</title>
+        <title>Normadie Pharma</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        ${helmet.title.toString()}
+        ${helmet.meta.toString()}
+        ${helmet.link.toString()}
         ${
           assets.client.css
             ? `<link rel="stylesheet" href="${assets.client.css}">`
-            : ""
+            : ''
         }
         ${
-          process.env.NODE_ENV === "production"
+          process.env.NODE_ENV === 'production'
             ? `<script src="${assets.client.js}" defer></script>`
             : `<script src="${assets.client.js}" defer crossorigin></script>`
         }
     </head>
-    <body>
+    <body ${helmet.bodyAttributes.toString()}>
         <div id="root">${markup}</div>
     </body>
 </html>`
