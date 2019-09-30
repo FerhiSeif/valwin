@@ -1,3 +1,90 @@
+@import '~@csstools/normalize.css';
+/* FIXME razzle postcss-normalize webpack config */
+/* @import "normalize.css"; */
+
+/*------------------------------------*\
+    #DESIGN TOKENS
+\*------------------------------------*/
+:root {
+  /*------------------------------------*\
+     #COLORS
+ \*------------------------------------*/
+
+  /**
+ * Brand Colors
+ */
+  --color-brand-green: #11a63c;
+  --color-brand-green-light: #e7f6ec;
+  --color-brand-yellow: #ecda38;
+  --color-brand-yellow-light: rgba(236, 218, 56, 0.1);
+
+  /**
+ * Neutral Colors
+ * Neutral colors are grayscale values used throughout the UI
+ */
+  --color-neutral-white: #fff;
+  --color-neutral-grey: #272a2c;
+  --color-neutral-grey-1: #4b4949;
+  --color-neutral-grey-2: #65696b;
+  --color-grey-light: #f6f6f6;
+
+  /*------------------------------------*\
+    #TYPOGRAPHY
+  \*------------------------------------*/
+
+  /**
+   * Font Family
+   */
+  --font-primary: 'Gotham Rounded', 'Helvetica', 'Arial', sans-serif;
+
+  /**
+   * Font Sizing
+   */
+  --font-size-sm: 0.75rem;
+  --font-size-sm-2: 0.85rem;
+  --font-size-med: 1rem;
+  --font-size-med-2: 1.2rem;
+  --font-size-large: 2rem;
+  --font-size-xl: 3rem;
+
+  /**
+   * Line Height
+   */
+  --line-height: 1.5;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 27px;
+  --font-size-h4: 19px;
+
+  /*------------------------------------*\
+    #SPACING
+  \*------------------------------------*/
+
+  /**
+  * Spacing and offsets
+  * 1) Used to space grids and body padding
+  */
+
+  --spacing: 1rem;
+  --spacing-small: calc(0.5 * var(--spacing));
+  --spacing-large: calc(2 * var(--spacing));
+
+  /*------------------------------------*\
+    #BORDERS
+  \*------------------------------------*/
+
+  /**
+   * Border
+   */
+  --border-thickness: 1px;
+
+  /**
+   * Border radius
+   */
+  --border-radius: 4px;
+}
+
 body {
   margin: 0;
   padding: 0;

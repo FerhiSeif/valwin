@@ -1,12 +1,13 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
-import Home from './Home';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router";
+import Home from "./pages/Home";
+import Pharmacies from "./pages/Pharmacies";
+import "./App.css";
 
 const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
+    <Route exact path="/nos-pharmacies" component={Pharmacies} />
   </Switch>
 );
 

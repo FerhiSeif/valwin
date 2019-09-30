@@ -1,7 +1,12 @@
 import App from './App';
-import BrowserRouter from 'react-router-dom/BrowserRouter';
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import { hydrate } from 'react-dom';
+import ReactDOM, { hydrate } from 'react-dom';
+
+if (process.env.NODE_ENV !== 'production') {
+  var axe = require('react-axe');
+  axe(React, ReactDOM, 1000);
+}
 
 hydrate(
   <BrowserRouter>

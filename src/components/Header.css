@@ -1,0 +1,25 @@
+.Header-top {
+  padding: var(--spacing);
+}
+
+.Header-menu {
+  padding: var(--spacing);
+  background-color: var(--color-brand-green);
+}
+
+.Header-menu-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.Header-menu-item {
+  padding-right: var(--spacing-small);
+  color: var(--color-neutral-white);
+  font-size: var(--font-size-med);
+  text-decoration: none;
+}
+
+.Header-menu-item:hover {
+  color: var(--color-brand-yellow);
+}
