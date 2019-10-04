@@ -1,10 +1,14 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import '../src/App.css';
 import Header from '../src/components/Header';
+import { MemoryRouter } from 'react-router-dom';
 
 export default {
   title: 'Header',
 };
 
-export const header = () => <Header />;
+export const header = () => (
+  <MemoryRouter>
+    <Header />
+  </MemoryRouter>
+);
