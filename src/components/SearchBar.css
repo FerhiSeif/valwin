@@ -1,0 +1,60 @@
+.SearchBar-container {
+  display: flex;
+  width: 821px;
+  height: 50px;
+  margin-top: 10px;
+  box-shadow: -1px 4px 10px #aaaaaab5;
+}
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  width: 751px;
+  height: 60%;
+  padding: 9px;
+  background: #ffffff;
+}
+
+.SearchBar-text {
+  color: #1ea133;
+  font-size: 12px;
+  font-family: 'Gotham Rounded';
+}
+.SearchBar-Input {
+  border: none;
+}
+
+.SearchBar-Input:focus {
+  outline: none;
+}
+
+.SearchBar-group-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  background: #ecda38;
+}
+.SearchBar-group-Button:hover {
+  background: #e4c000;
+}
+
+::placeholder {
+  color: #64686a;
+  font-size: 14px;
+  font-family: 'Gotham Rounded';
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #64686a;
+  font-size: 14px;
+  font-family: 'Gotham Rounded';
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #64686a;
+  font-size: 14px;
+  font-family: 'Gotham Rounded';
+}

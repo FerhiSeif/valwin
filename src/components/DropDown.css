@@ -1,0 +1,7 @@
+ul.MuiList-root.MuiList-padding {
+  position: absolute;
+  top: 12px;
+  left: -5px;
+  width: 100%;
+  background: green;
+}

@@ -1,0 +1,17 @@
+.Partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 281px;
+  height: 278px;
+  padding: 31px 36px;
+  border: 1px solid;
+}
+
+.Partners-logo {
+  width: 114px;
+  height: 114px;
+  margin-right: 23 px;
+}
+.Partners-servol-yellow:hover {
+  background: #ecda38;
+}

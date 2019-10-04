@@ -1,9 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
+import SearchBar from '../components/SearchBar';
 import Layout from './Layout';
 import Button from '../components/Button';
 import ArticleListe from '../components/ArticleList';
+import Partners from '../components/Partners';
 import './Home.css';
 
 const Home = () => (
@@ -18,8 +19,10 @@ const Home = () => (
       ]}
     ></Helmet>
     <div className="Home">Bienvenue chez Normadie Pharma !</div>
-    <Button>Je suis un bouton</Button>
-    <ArticleListe />
+    <Partners />
+    {/* <Button>Je suis un bouton</Button>
+    <ArticleListe /> */}
+    {/* <SearchBar></SearchBar> */}
   </Layout>
 );
 

@@ -8,6 +8,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import './DropDown.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,27 +38,26 @@ export default function MenuListComposition() {
   console.log('open : ', open);
   return (
     <div className={classes.root}>
-      <div style={{ height: '88px', width: '30px' }}>
-        <Button
+      <div style={{ height: '13px', width: '42px' }}>
+        <div
           ref={anchorRef}
           aria-controls="menu-list-grow"
           aria-haspopup="true"
           onClick={handleToggle}
+          style={{ width: '44px', height: '44px', background: 'green' }}
         >
           {open == false ? (
             <img
-              src={require('../images/openNav.png')}
-              style={{ background: 'green' }}
-              width="64px"
+              src={require('../icons/menu.svg')}
+              style={{ background: 'green', width: '50px', height: '54px' }}
             />
           ) : (
             <img
-              src={require('../images/closeNav.png')}
-              style={{ background: 'green' }}
-              width="64px"
+              src={require('../icons/Exitmenu.svg')}
+              style={{ background: 'green', width: '50px', height: '57px' }}
             />
           )}
-        </Button>
+        </div>
 
         <Popper
           open={open}
@@ -77,7 +77,7 @@ export default function MenuListComposition() {
             >
               <Paper id="menu-list-grow">
                 <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList style={{ background: 'green', width: '100%' }}>
+                  <MenuList>
                     <MenuItem onClick={handleClose}>
                       <Link className="Header-menu-item" to="/">
                         Accueil

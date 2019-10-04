@@ -3,15 +3,25 @@ import React from 'react';
 import './Footer.css';
 import logo from '../icons/logo-small.svg';
 import logo1 from '../icons/logo.svg';
+import logo2 from '../images/Logo_Valwin_2018.svg';
 
 const Footer = () => (
   <div>
     <footer className="Footer">
-      <div>
-        <img src={logo} className="Footer-logo" alt="logo normandie pharma" />
+      <div className="Footer-logosContainer">
+        <div>
+          <img src={logo} className="Footer-logo" alt="logo normandie pharma" />
+          <div className="Footer-secondlogo">
+            <img
+              src={logo2}
+              className="Footer-logo"
+              alt="logo normandie pharma"
+            />
+          </div>
+        </div>
       </div>
       <div>
-        <ul className="Footer-list">
+        <ul className="Footer-list none-res">
           <li className="Footer-list-item title-list-item">Contactez-nous</li>
           <li className="Footer-list-item">Adresse</li>
           <li className="Footer-list-item">Code postal + ville</li>
@@ -45,8 +55,8 @@ const Footer = () => (
           <li className="Footer-list-item">Mentions légales</li>
           <li className="Footer-list-item">CGU</li>
           <div className="FooterCopyright">
-            <p className="text-copyrigth">&#9400; Valwin 2019</p>
-            <p className="text-copyrigth">Mise à jour le 25/02/2019</p>
+            <p className="Footer-texcopyrigth">&#9400; Valwin 2019</p>
+            <p className="Footer-texcopyrigth">Mise à jour le 25/02/2019</p>
           </div>
         </ul>
       </div>
@@ -80,6 +90,13 @@ const Footer = () => (
       </footer>
       <div style={{ flex: '1', display: 'flex' }}>
         <div className="Footer-logo-resp">
+          <div className="Footer-secondlogo">
+            <img
+              src={logo2}
+              className="Footer-logo"
+              alt="logo normandie pharma"
+            />
+          </div>
           <img
             src={logo1}
             className="Footer-logo"
@@ -87,8 +104,8 @@ const Footer = () => (
           />
         </div>
         <div className="Footer-copyright-resp">
-          <p className="text-copyrigth">&#9400; Valwin 2019</p>
-          <p className="text-copyrigth">Mise à jour le 25/02/2019</p>
+          <p className="Footer-texcopyrigth">&#9400; Valwin 2019</p>
+          <p className="Footer-texcopyrigth">Mise à jour le 25/02/2019</p>
         </div>
       </div>
     </div>

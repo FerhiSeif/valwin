@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   height: 228px;
   padding: var(--spacing);
+  padding: 60px;
   color: var(--color-neutral-white);
   background-color: var(--color-neutral-grey);
 }
@@ -14,6 +15,7 @@
 }
 .Footer-list-item {
   margin-bottom: 9px;
+  font-family: 'Roboto';
 }
 
 .hr-footer {
@@ -25,11 +27,12 @@
 .title-list-item {
   margin-bottom: 18px;
   font-weight: bold;
+  font-family: 'Roboto';
 }
 .FooterCopyright {
   margin-top: 30px;
 }
-.text-copyrigth {
+.Footer-texcopyrigth {
   margin-bottom: -10px;
 }
 .Footer-logo-resp {
@@ -43,6 +46,17 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+}
+.Footer-secondlogo {
+  display: flex;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  background: white;
+  border-radius: 423423px;
+}
+.Footer-logosContainer {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -61,5 +75,26 @@
     display: flex;
     flex-direction: column;
     height: 370px;
+  }
+  .Footer-logosContainer {
+    display: flex;
+  }
+  .none-res {
+    display: none;
+  }
+  .Footer-secondlogo {
+    width: 75px;
+  }
+  .Footer-logo {
+    width: 123px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Footer-texcopyrigth {
+    font-size: 12px;
+  }
+  .Footer-logo {
+    width: 95px;
   }
 }
