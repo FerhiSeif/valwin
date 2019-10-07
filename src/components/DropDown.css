@@ -5,3 +5,28 @@ ul.MuiList-root.MuiList-padding {
   width: 100%;
   background: green;
 }
+
+.DropDown-container {
+  width: 42px;
+  height: 13px;
+}
+.DropDown-MenuList-Container {
+  width: 44px;
+  height: 44px;
+  background: var(--color-brand-green);
+}
+.DropDown-OpenMenueBtn {
+  width: 50px;
+  height: 54px;
+  background: var(--color-brand-green);
+}
+
+.DropDown-ExitMenueBtn {
+  width: 50px;
+  height: 57px;
+  background: var(--color-brand-green);
+}
+
+.DropDown-MenurList {
+  width: 100%;
+}

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import SearchBar from '../components/SearchBar';
 import Layout from './Layout';
 import Button from '../components/Button';
-import ArticleListe from '../components/ArticleList';
+import ArticleList from '../components/ArticleList';
 import Partners from '../components/Partners';
 import './Home.css';
 
@@ -21,7 +21,7 @@ const Home = () => (
     <div className="Home">Bienvenue chez Normadie Pharma !</div>
     <Partners />
     {/* <Button>Je suis un bouton</Button>
-    <ArticleListe /> */}
+    <ArticleList /> */}
     {/* <SearchBar></SearchBar> */}
   </Layout>
 );

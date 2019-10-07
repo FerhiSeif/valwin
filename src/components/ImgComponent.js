@@ -1,10 +1,8 @@
 import React from 'react';
 import WhiteTitle from './WhiteTitle';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import './ImgComponent.css';
 
-const ImgComponent = ({ large, green }) => (
+const ImgComponent = () => (
   <div className="ImgComponent-container">
     <div className="ImgContainer">
       <div className="ImgComponent-text">

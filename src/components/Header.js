@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import mapsvg from '../icons/map.svg';
-import accessibility from '../icons/accessibility.png';
+import accessibility from '../icons/accessibility.svg';
 import HeaderLink from './HeaderLink';
 import './Header.css';
 import logo from '../icons/logo.svg';
@@ -20,7 +20,11 @@ const Header = () => (
             <DropDown />
           </div>
           <div className="Header-link-container">
-            <img src={mapsvg} style={{ marginRight: '10px' }} />
+            <img
+              className="Header-link-logo"
+              src={mapsvg}
+              alt="logo trouver pharmacie"
+            />
             <HeaderLink to="/nos-pharmacies">
               Trouvez votre pharmacie
             </HeaderLink>
@@ -30,8 +34,9 @@ const Header = () => (
           </div>
           <div className="Header-link-container">
             <img
+              className="Header-link-logo"
               src={accessibility}
-              style={{ marginRight: '10px', width: '31px' }}
+              alt="logo trouver rejoindre"
             />
             <HeaderLink to="/contact">Nous rejoindre</HeaderLink>
           </div>

@@ -1,17 +1,25 @@
 .Partners-container {
   display: flex;
   flex-wrap: wrap;
-  width: 281px;
-  height: 278px;
-  padding: 31px 36px;
-  border: 1px solid;
+  width: 600px;
+  height: 600px;
+  padding: var(--spacing-large) var(--spacing-large);
 }
 
 .Partners-logo {
-  width: 114px;
-  height: 114px;
-  margin-right: 23 px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: var(--color-neutral-white);
+  border-radius: var(--border-radius);
 }
-.Partners-servol-yellow:hover {
-  background: #ecda38;
+
+.Partners-logo:hover {
+  opacity: 0;
+}
+
+.Partners-itemhover {
+  display: flex;
 }

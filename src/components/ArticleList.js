@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { imageArticle } from '../images/imageArticle.png';
 import './ArticleList.css';
 
-class ArticleListe extends Component {
+class ArticleList extends Component {
   state = {
     article: [
       { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
@@ -14,10 +14,8 @@ class ArticleListe extends Component {
       <div className="ArticleListe-container">
         {this.state.article.map((article, i) => {
           return (
-            <div className="ArticleCard-container">
-              <div
-                className="ArticleCard-imgContainer" /* src={require('../icons/imageArticle.png')}*/
-              />
+            <div key={i} className="ArticleCard-container">
+              <div className="ArticleCard-imgContainer" />
               <hr className="ArticleCard-hr" />
               <p className="ArticleCard-text"> {article.text}</p>
             </div>
@@ -28,4 +26,4 @@ class ArticleListe extends Component {
   }
 }
 
-export default ArticleListe;
+export default ArticleList;

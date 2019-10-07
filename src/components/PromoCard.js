@@ -6,16 +6,9 @@ class PromoCard extends Component {
   render() {
     return (
       <div className="PromoCard-container">
-        {/* <img src={require('../icons/zoom.png')}/>zoom.png */}
-        <div
-          className="PromoCard-zoom" /* src={require('../icons/imageArticle.png')}*/
-        />
-        <div
-          className="PromoCard-imgContainer" /* src={require('../icons/imageArticle.png')}*/
-        />
-        <div
-          className="PromoCard-coeur" /* src={require('../icons/coeur.png')}*/
-        />
+        <div className="PromoCard-zoom" />
+        <div className="PromoCard-imgContainer" />
+        <div className="PromoCard-coeur" />
         <p className="PromoCard-title">BIODERMA</p>
         <p className="PromoCard-text">CDERM Lait hydratant douceur T/200ml</p>
         <hr className="PromoCard-hr" />
