@@ -51,10 +51,10 @@ const Home = () => (
         <TitleContainer white={true}> au prix qui me va bien!</TitleContainer>
       </div>
     </section>
-    {/* <section className="Home-Articlesection">
-      <TextComponent large={true}>
+     <section className="Home-Articlesection">
+      <p className="Home-Articlesection-Title" large={true}>
         Nos derniers <span className="TextComponent-bold">articles</span>
-      </TextComponent>
+      </p>
       <ArticleList />
       <Button medium={true}>Tous les articles</Button>
     </section>

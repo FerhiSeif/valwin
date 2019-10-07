@@ -135,7 +135,7 @@
     border-left: 0.75px solid #cfd2d1;
   }
   .Header-link-container {
-    margin-top: 11px;
+    /* margin-top: 11px; */
     margin-right: 20px;
   }
   .Header-hr-res {

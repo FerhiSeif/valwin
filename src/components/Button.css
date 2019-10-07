@@ -94,9 +94,16 @@
   display: block;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
   .Button--medium {
-    font-size: var(--font-size-med-2);
+    font-size: var(--font-size-med);
+    background: var(--color-neutral-white);
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .Button--medium {
+    font-size: var(--font-size-med-1);
     background: var(--color-neutral-white);
   }
 }

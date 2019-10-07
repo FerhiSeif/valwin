@@ -34,12 +34,29 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 752px) {
+  .TextH3--small {
+    font-size: var(--font-size-med);
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 960px) {
   .TextH1--green {
     font-size: var(--font-size-large);
   }
+
   .TextH3--small {
     font-size: var(--font-size-med-1);
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .TextH1--green {
+    font-size: var(--font-size-large-1);
+  }
+  .TextH3--small {
+    font-size: var(--font-size-med-2);
   }
 
   .TextH2--large {

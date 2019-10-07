@@ -5,15 +5,15 @@
 }
 
 @media only screen and (min-width: 960px) {
-  .PromoCardList-container {
+  /* .PromoCardList-container {
     width: 80%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1120px) {
   .PromoCardList-container {
-    align-self: center;
-    width: 100%;
+    align-self: flex-end;
+    width: 507px;
     height: AUTO;
   }
 }
