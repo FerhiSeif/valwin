@@ -38,23 +38,25 @@ export default function MenuListComposition() {
   console.log('open : ', open);
   return (
     <div className={classes.root}>
-      <div style={{ height: '13px', width: '42px' }}>
+      <div className="DropDown-container">
         <div
           ref={anchorRef}
           aria-controls="menu-list-grow"
           aria-haspopup="true"
           onClick={handleToggle}
-          style={{ width: '44px', height: '44px', background: 'green' }}
+          className="DropDown-MenuList-Container"
         >
           {open == false ? (
             <img
+              className="DropDown-OpenMenueBtn"
               src={require('../icons/menu.svg')}
-              style={{ background: 'green', width: '50px', height: '54px' }}
+              alt="Open-Menue-List"
             />
           ) : (
             <img
+              className="DropDown-ExitMenueBtn"
               src={require('../icons/Exitmenu.svg')}
-              style={{ background: 'green', width: '50px', height: '57px' }}
+              alt="Exit-Menue-List"
             />
           )}
         </div>
@@ -65,7 +67,7 @@ export default function MenuListComposition() {
           keepMounted
           transition
           disablePortal
-          style={{ width: '100%' }}
+          className="DropDown-MenurList"
         >
           {({ TransitionProps, placement }) => (
             <Grow

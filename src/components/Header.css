@@ -54,6 +54,9 @@
 .Header-menu-item:hover {
   color: var(--color-brand-yellow);
 }
+.Header-link-logo {
+  margin-right: 9px;
+}
 
 @media only screen and (max-width: 900px) {
   .Header-top {

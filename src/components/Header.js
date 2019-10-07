@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mapsvg from '../icons/map.svg';
-import accessibility from '../icons/accessibility.png';
+import accessibility from '../icons/accessibility.svg';
 import HeaderLink from './HeaderLink';
 import './Header.css';
 import logo from '../icons/logo.svg';
