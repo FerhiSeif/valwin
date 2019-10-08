@@ -1,5 +1,120 @@
 .Footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 228px;
   padding: var(--spacing);
+  padding: 60px;
   color: var(--color-neutral-white);
   background-color: var(--color-neutral-grey);
+}
+.Footer-container {
+  display: flex;
+  justify-content: inherit;
+  width: 84%;
+}
+.Footer-resp {
+  display: none;
+}
+.Footer-list {
+  list-style: none;
+}
+.Footer-list-item {
+  margin-bottom: 9px;
+  font-family: 'Roboto';
+}
+
+.hr-footer {
+  width: 12px;
+  height: 160px;
+  margin: 0;
+  border: none;
+  border-left: 1px solid white;
+}
+.title-list-item {
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.FooterCopyright {
+  margin-top: 30px;
+}
+.Footer-texcopyrigth {
+  margin-bottom: -10px;
+}
+.Footer-logo-resp {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.Footer-copyright-resp {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 7%;
+  color: var(--color-neutral-grey);
+}
+.Footer-secondlogo {
+  display: flex;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  margin-top: 20px;
+  background: var(--color-neutral-white);
+  border-radius: 423423px;
+}
+.Footer-logosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing);
+}
+.Footer-logoResp-container {
+  display: flex;
+  flex: 1;
+}
+.Footer-res-display {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .Footer-container {
+    display: none;
+  }
+  .Footer-res-display {
+    display: flex;
+    justify-content: space-evenly;
+    height: 228px;
+    padding: var(--spacing);
+    color: var(--color-neutral-white);
+    background-color: var(--color-neutral-grey);
+  }
+  .Footer-resp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 370px;
+  }
+  .Footer-container {
+    display: none;
+  }
+  .none-res {
+    display: none;
+  }
+  .Footer-secondlogo {
+    width: 75px;
+  }
+  .Footer-logo {
+    width: 123px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Footer-texcopyrigth {
+    font-size: var(--font-size-sm);
+  }
+  .Footer-logo {
+    width: 95px;
+  }
 }

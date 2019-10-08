@@ -1,0 +1,70 @@
+.SearchBar-container {
+  display: flex;
+  width: 376px;
+  height: 50px;
+  margin-top: 10px;
+  box-shadow: -1px 4px 10px var(--color-grey-light);
+}
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  width: 751px;
+  height: 60%;
+  padding: 9px;
+  background: var(--color-neutral-white);
+}
+
+.SearchBar-text {
+  color: var(--color-brand-green);
+  font-size: var(--font-size-sm-2);
+  font-family: 'Gotham Rounded';
+}
+.SearchBar-Input {
+  border: none;
+}
+
+.SearchBar-Input:focus {
+  outline: none;
+}
+
+.SearchBar-group-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  background: #ecda38af;
+  border: none;
+}
+.SearchBar-group-Button:hover {
+  background: var(--color-brand-yellow);
+}
+
+::placeholder {
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+}
+
+@media only screen and (min-width: 900px) {
+  .SearchBar-container {
+    width: 820px;
+  }
+  .SearchBar-group-Button {
+    width: 52px;
+  }
+}

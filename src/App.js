@@ -1,8 +1,8 @@
-import React from "react";
-import { Route, Switch } from "react-router";
-import Home from "./pages/Home";
-import Pharmacies from "./pages/Pharmacies";
-import "./App.css";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Pharmacies from './pages/Pharmacies';
+import './App.css';
 
 const App = () => (
   <Switch>

@@ -1,0 +1,60 @@
+.PromoCard-container {
+  display: flex;
+  flex-direction: column;
+  width: 180.19px;
+  height: 252px;
+  padding: 10px 12px;
+  border: 1px solid #70707057;
+}
+
+.PromoCard-imgContainer {
+  align-self: center;
+  width: 102px;
+  height: 110px;
+  background: url('../images/Product.png');
+  background-size: cover;
+}
+.PromoCard-zoom {
+  align-self: flex-end;
+  width: 12px;
+  height: 16px;
+  background: url('../icons/zoom.png');
+  background-size: cover;
+}
+.PromoCard-coeur {
+  align-self: center;
+  width: 11px;
+  height: 10px;
+  background: url('../icons/coeur.png');
+  background-size: cover;
+}
+
+.PromoCard-title {
+  align-self: center;
+  margin-top: 0;
+  color: #65bd45;
+  font-size: 13px;
+  font-family: 'Gotham Rounded';
+}
+
+.PromoCard-text {
+  align-self: center;
+  margin-top: 0;
+  color: #707070;
+  font-size: 12px;
+  font-family: 'Gotham Rounded';
+  text-align: center;
+}
+
+.PromoCard-hr {
+  width: 20px;
+  background: #cfd2d1;
+  border: 1.25px solid #cfd2d1;
+}
+
+.PromoCard-price {
+  align-self: center;
+  margin-top: 0;
+  color: #044435;
+  font-family: 'Gotham Rounded';
+}

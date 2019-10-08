@@ -1,0 +1,63 @@
+.Partners-hoverdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+}
+
+.Partners-title {
+  margin: 0;
+  color: var(--color-neutral-grey);
+  font-weight: bold;
+  font-size: var(--font-size-h3);
+}
+.Partners-text {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--color-neutral-grey-1);
+  font-size: var(--font-size-med-2);
+}
+.Partner-pluscircle {
+  width: 28px;
+}
+
+/* green component */
+.Partners-hoverdivgreen {
+  background: var(--color-brand-green);
+}
+.Partners-hrgreen {
+  width: 50px;
+  border: 2px solid var(--color-neutral-white);
+}
+
+/* greenlight component */
+.Partners-hoverdivgreenlight {
+  background: var(--color-brand-green-light);
+}
+.Partners-hrgreenlight {
+  width: 50px;
+  border: 2px solid var(--color-brand-green);
+}
+
+/* yellow component */
+.Partners-hoverdivyellow {
+  background: var(--color-brand-yellow);
+}
+.Partners-hryellow {
+  width: 50px;
+  border: 2px solid var(--color-neutral-white);
+}
+
+/* greenlight component */
+.Partners-hoverdivyellowlight {
+  background: var(--color-brand-yellow-light);
+}
+.Partners-hryellowlight {
+  width: 50px;
+  border: 2px solid var(--color-brand-yellow);
+}
