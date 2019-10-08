@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Footer.css';
 import normPharmalogo from '../icons/logo-small.svg';
 import logo1 from '../icons/logo.svg';
