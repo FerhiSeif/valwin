@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import SearchBar from '../components/SearchBar';
 import Layout from './Layout';
+import ImgComponent from '../components/ImgComponent';
 import Button from '../components/Button';
 import ArticleList from '../components/ArticleList';
 import Partners from '../components/Partners';
@@ -18,11 +19,11 @@ const Home = () => (
         },
       ]}
     ></Helmet>
-    <div className="Home">Bienvenue chez Normadie Pharma !</div>
-    <Partners />
-    {/* <Button>Je suis un bouton</Button>
-    <ArticleList /> */}
-    {/* <SearchBar></SearchBar> */}
+    <p>jhjhjh</p>
+    <section className="Home-Introsection">
+      <ImgComponent />
+      <SearchBar />
+    </section>
   </Layout>
 );
 
