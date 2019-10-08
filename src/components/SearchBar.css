@@ -1,6 +1,6 @@
 .SearchBar-container {
   display: flex;
-  width: 821px;
+  width: 376px;
   height: 50px;
   margin-top: 10px;
   box-shadow: -1px 4px 10px var(--color-grey-light);
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
+  width: 95px;
   background: #ecda38af;
   border: none;
 }
@@ -58,4 +58,13 @@
   color: var(--color-neutral-grey-2);
   font-size: var(--font-size-med);
   font-family: 'Gotham Rounded';
+}
+
+@media only screen and (min-width: 900px) {
+  .SearchBar-container {
+    width: 820px;
+  }
+  .SearchBar-group-Button {
+    width: 52px;
+  }
 }

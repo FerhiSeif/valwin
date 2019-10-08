@@ -6,7 +6,7 @@ import geolocalwhite from '../src/icons/geolocalwhite.svg';
 import geolocaldark from '../src/icons/geolocaldark.svg';
 import filterbtnDown from '../src/icons/filterbtnDown.svg';
 import filterbtnDownSurvol from '../src/icons/filterbtnDownSurvol.svg';
-import filterbtnUp from '../src/icons/filterbtnUp.svg';
+//import filterbtnUp from '../src/icons/filterbtnUp.svg';
 
 export default {
   title: 'Button',

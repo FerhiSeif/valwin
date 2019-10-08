@@ -49,7 +49,7 @@ const Footer = () => (
         <li className="Footer-list-item">CGU</li>
         <li className=" Footer-list-item FooterCopyright">
           <p className="Footer-texcopyrigth">&#9400; Valwin 2019</p>
-          <p className="Footer-texcopyrigth">Mise à jour le 25/02/2019</p>
+          <p className="Footer-texcopyrigth">Mise à jour le 09/2019</p>
         </li>
       </ul>
     </div>
@@ -92,7 +92,7 @@ const Footer = () => (
         </div>
         <div className="Footer-copyright-resp">
           <p className="Footer-texcopyrigth">&#9400; Valwin 2019</p>
-          <p className="Footer-texcopyrigth">Mise à jour le 25/02/2019</p>
+          <p className="Footer-texcopyrigth">Mise à jour le 09/2019</p>
         </div>
       </div>
     </div>

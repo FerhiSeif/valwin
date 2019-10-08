@@ -13,26 +13,24 @@
   margin-right: 27px;
   margin-bottom: 27px;
   padding: 5px;
-  background: #ffffff;
+  background: var(--color-neutral-white);
   border: 1px solid transparent;
 }
 .ArticleCard-container:hover {
-  border: 1px solid yellow;
+  border: 1px solid var(--color-brand-yellow);
 }
 
-.ArticleCard-imgContainer {
+.ArticleCard-img {
   width: 235px;
   height: 212px;
-  background: url('../images/imageArticle.png');
 }
 .ArticleCard-hr {
   width: 50px;
   margin-left: 10px;
-  border: 2px solid #ecda38;
+  border: 2px solid var(--color-brand-yellow);
 }
 .ArticleCard-text {
   padding: 10px;
-  color: #707070;
-  font-size: 14px;
+  color: var(--color-neutral-grey-2);
   font-family: 'Gotham Rounded';
 }

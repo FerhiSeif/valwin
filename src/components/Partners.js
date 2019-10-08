@@ -10,7 +10,11 @@ const partners = [bioderma, biogaran, gibaud, gifrer];
 const survolcolor = ['green', 'greenlight', 'yellow', 'yellowlight'];
 
 //repeat table arr n times
-const makeRepeated = (arr, n) => Array.from({ length: n }, () => arr).flat();
+const makeRepeated = (arr, n) =>
+  Array.from({ length: n }, () => arr).reduce(
+    (acc, val) => acc.concat(val),
+    []
+  );
 
 class Partners extends Component {
   render() {
@@ -19,6 +23,7 @@ class Partners extends Component {
     let newSurvolTab = makeRepeated(survolcolor, rest).concat(
       survolcolor.slice(0, mod)
     );
+    console.log('newSurvolTab ', newSurvolTab);
     return (
       <div className="Partners-container">
         {partners.map((partner, i) => (

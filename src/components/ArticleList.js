@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { imageArticle } from '../images/imageArticle.png';
+import imageArticle from '../images/imageArticle.png';
+import TextComponent from './TextComponent';
 import './ArticleList.css';
 
 class ArticleList extends Component {
   state = {
-    article: [
+    articles: [
       { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
       { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
     ],
@@ -12,12 +13,16 @@ class ArticleList extends Component {
   render() {
     return (
       <div className="ArticleListe-container">
-        {this.state.article.map((article, i) => {
+        {this.state.articles.map((article, i) => {
           return (
             <div key={i} className="ArticleCard-container">
-              <div className="ArticleCard-imgContainer" />
+              <img
+                src={article.img}
+                className="ArticleCard-img"
+                alt="image Article"
+              />
               <hr className="ArticleCard-hr" />
-              <p className="ArticleCard-text"> {article.text}</p>
+              <TextComponent small={true}> {article.text}</TextComponent>
             </div>
           );
         })}

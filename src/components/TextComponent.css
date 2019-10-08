@@ -1,0 +1,31 @@
+.TextComponent {
+  color: var(--color-neutral-grey-2);
+  font-family: 'Gotham Rounded';
+}
+
+.TextH2--large {
+  font-size: var(--font-size-large);
+}
+
+.TextH1--green {
+  color: var(--color-brand-green);
+  font-size: var(--font-size-xl);
+}
+
+.TextH3--small {
+  font-size: var(--font-size-sm-2);
+}
+
+.Text--telNumber {
+  color: var(--color-neutral-grey);
+  font-size: var(--font-size-xl);
+}
+
+.TextH1--black {
+  color: var(--color-neutral-grey);
+  font-size: var(--font-size-xl);
+}
+
+.TextComponent-bold {
+  font-weight: bold;
+}

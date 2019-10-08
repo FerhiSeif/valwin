@@ -19,38 +19,23 @@ const Header = () => (
           <DropDown />
         </div>
         <div className="Header-link-container">
-          <img src={mapsvg} style={{ marginRight: '10px' }} />
+          <img
+            className="Header-link-logo"
+            src={mapsvg}
+            alt="logo trouver pharmacie"
+          />
           <HeaderLink to="/nos-pharmacies">Trouvez votre pharmacie</HeaderLink>
         </div>
         <div className="Header-hr-res">
           <hr className="Header-hr" />
         </div>
-        <div className="Header-top-link">
-          {/*dropdown*/}
-          <div className="Header-resp-toggle">
-            <DropDown />
-          </div>
-          <div className="Header-link-container">
-            <img
-              className="Header-link-logo"
-              src={mapsvg}
-              alt="logo trouver pharmacie"
-            />
-            <HeaderLink to="/nos-pharmacies">
-              Trouvez votre pharmacie
-            </HeaderLink>
-          </div>
-          <div className="Header-hr-res">
-            <hr className="Header-hr" />
-          </div>
-          <div className="Header-link-container">
-            <img
-              className="Header-link-logo"
-              src={accessibility}
-              alt="logo trouver rejoindre"
-            />
-            <HeaderLink to="/contact">Nous rejoindre</HeaderLink>
-          </div>
+        <div className="Header-link-container">
+          <img
+            className="Header-link-logo"
+            src={accessibility}
+            alt="logo trouver rejoindre"
+          />
+          <HeaderLink to="/contact">Nous rejoindre</HeaderLink>
         </div>
       </div>
     </div>
