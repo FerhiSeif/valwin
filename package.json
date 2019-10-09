@@ -4,14 +4,14 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start:dev": "razzle start",
-    "build": "razzle build",
-    "test": "razzle test --env=jsdom",
     "start": "NODE_ENV=production node build/server.js",
+    "start:dev": "razzle start",
+    "start:storybook": "start-storybook -p 6006",
+    "build": "razzle build",
+    "build:storybook": "build-storybook",
+    "test": "razzle test --env=jsdom",
     "lint": "eslint src --fix",
-    "stylelint": "stylelint ./src/**/*.css --fix",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "stylelint": "stylelint ./src/**/*.css --fix"
   },
   "engines": {
     "node": ">=10.16.3"
