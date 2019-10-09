@@ -17,13 +17,13 @@ ul.MuiList-root.MuiList-padding {
 }
 .DropDown-OpenMenueBtn {
   width: 50px;
-  height: 54px;
+  height: 56px;
   background: var(--color-brand-green);
 }
 
 .DropDown-ExitMenueBtn {
   width: 50px;
-  height: 57px;
+  height: 56px;
   background: var(--color-brand-green);
 }
 

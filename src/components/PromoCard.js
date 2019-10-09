@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { imageArticle } from '../images/imageArticle.png';
+import favoritePromo from '../icons/coeur.svg';
+import promoZoomIcon from '../icons/zoom.svg';
 import './PromoCard.css';
 
-class PromoCard extends Component {
-  render() {
-    return (
-      <div className="PromoCard-container">
-        <div className="PromoCard-zoom" />
-        <div className="PromoCard-imgContainer" />
-        <div className="PromoCard-coeur" />
-        <p className="PromoCard-title">BIODERMA</p>
-        <p className="PromoCard-text">CDERM Lait hydratant douceur T/200ml</p>
-        <hr className="PromoCard-hr" />
-        <p className="PromoCard-price"> 6,46 €</p>
-      </div>
-    );
-  }
-}
+const PromoCard = ({ promoImg, promoTitle, promoText, promoPrice }) => {
+  return (
+    <div className="PromoCard-container">
+      <img src={promoZoomIcon} className="PromoCard-zoom" />
+      <img src={promoImg} className="PromoCard-img" />
+      <img src={favoritePromo} className="PromoCard-coeur" />
+      <p className="PromoCard-title">{promoTitle}</p>
+      <p className="PromoCard-text">{promoText}</p>
+      <hr className="PromoCard-hr" />
+      <p className="PromoCard-price"> {promoPrice}</p>
+    </div>
+  );
+};
 
 export default PromoCard;

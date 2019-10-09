@@ -4,16 +4,19 @@
 }
 
 .TextH2--large {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-med-2);
 }
 
 .TextH1--green {
+  margin: 0;
   color: var(--color-brand-green);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-med);
 }
 
 .TextH3--small {
+  margin: 0;
   font-size: var(--font-size-sm-2);
+  text-align: center;
 }
 
 .Text--telNumber {
@@ -28,4 +31,17 @@
 
 .TextComponent-bold {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+  .TextH1--green {
+    font-size: var(--font-size-large);
+  }
+  .TextH3--small {
+    font-size: var(--font-size-med-2);
+  }
+
+  .TextH2--large {
+    font-size: var(--font-size-large);
+  }
 }

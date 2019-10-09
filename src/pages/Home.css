@@ -17,3 +17,83 @@
 .Home-Introsection {
   position: relative;
 }
+.Home-Promosection {
+  position: relative;
+  height: 573px;
+  padding-top: 60px;
+  background: #f6f6f6;
+}
+.Promosection-textContainer {
+  width: 225px;
+  height: 57px;
+}
+.Home-Promosection-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Home-Promosection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 249px;
+}
+
+.Home-Articlesection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 573px;
+  padding-top: 83px;
+}
+.Home-Servicesection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 364px;
+  padding-top: 53px;
+}
+.Servicesection-textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: inherit;
+  width: 225px;
+  height: 102px;
+}
+.Home-Servicesection-title {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 900px) {
+  .Home-Promosection {
+    position: relative;
+    display: flex;
+  }
+  .Home-Promosection-info {
+    flex: 1;
+  }
+  .Home-Promosection-title {
+    position: absolute;
+    right: 0;
+    bottom: -63px;
+  }
+  .Home-Promosection-info {
+    justify-content: space-evenl;
+    height: 100%;
+  }
+  .Home-Servicesection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 313px;
+    padding-top: 0;
+  }
+  .Home-Servicesection-title {
+    position: absolute;
+  }
+}

@@ -1,0 +1,10 @@
+.PromoCardList-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 900px) {
+  .PromoCardList-container {
+    width: 565px;
+  }
+}

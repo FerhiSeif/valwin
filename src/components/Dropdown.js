@@ -35,7 +35,6 @@ export default function MenuListComposition() {
 
     setOpen(false);
   };
-  console.log('open : ', open);
   return (
     <div className={classes.root}>
       <div className="DropDown-container">

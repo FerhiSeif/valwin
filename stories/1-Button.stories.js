@@ -13,7 +13,9 @@ export default {
 };
 
 export const medium = () => (
-  <Button onClick={action('clicked')}>Tous les articles</Button>
+  <Button onClick={action('clicked')} medium={true}>
+    Tous les articles
+  </Button>
 );
 
 export const large = () => (

@@ -1,36 +1,66 @@
-@font-face {
-  font-family: 'Gotham Rounded';
-  src: url('../fonts/gothamroundedlight_21020.ttf');
-}
 .ArticleListe-container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .ArticleCard-container {
-  width: 235px;
-  height: 312px;
-  margin-right: 27px;
-  margin-bottom: 27px;
+  margin-top: 10px;
+  margin-right: 9px;
   padding: 5px;
   background: var(--color-neutral-white);
-  border: 1px solid transparent;
+  border: 1px solid var(--color-grey-light);
+  box-shadow: 0px 3px 2px 0px var(--color-grey-light);
+}
+
+.ArticleCard-containerShort {
+  width: 160px;
+  height: 210px;
+}
+
+.ArticleCard-containerLong {
+  width: 160px;
+  height: 239px;
 }
 .ArticleCard-container:hover {
   border: 1px solid var(--color-brand-yellow);
 }
 
-.ArticleCard-img {
-  width: 235px;
-  height: 212px;
+.ArticleCard-imgShort {
+  width: 159px;
+  height: 144px;
+}
+.ArticleCard-imgLong {
+  width: 159px;
+  height: 164px;
 }
 .ArticleCard-hr {
-  width: 50px;
+  width: 36px;
   margin-left: 10px;
   border: 2px solid var(--color-brand-yellow);
 }
 .ArticleCard-text {
-  padding: 10px;
   color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-sm);
   font-family: 'Gotham Rounded';
+}
+
+@media only screen and (min-width: 900px) {
+  .ArticleCard-containerShort {
+    width: 236px;
+    height: 312px;
+  }
+  .ArticleCard-containerLong {
+    width: 236px;
+    height: 352px;
+  }
+
+  .ArticleCard-imgShort {
+    width: 236px;
+    height: 212px;
+  }
+  .ArticleCard-imgLong {
+    width: 236px;
+    height: 243px;
+  }
 }

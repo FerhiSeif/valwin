@@ -1,60 +1,99 @@
 .PromoCard-container {
   display: flex;
   flex-direction: column;
-  width: 180.19px;
-  height: 252px;
-  padding: 10px 12px;
-  border: 1px solid #70707057;
-}
-
-.PromoCard-imgContainer {
-  align-self: center;
   width: 102px;
-  height: 110px;
-  background: url('../images/Product.png');
-  background-size: cover;
+  height: 136px;
+  margin: 5px;
+  padding: 3px;
+  border: 1px solid;
+}
+.PromoCard-img {
+  align-self: center;
+  width: 66px;
+  height: 70px;
 }
 .PromoCard-zoom {
   align-self: flex-end;
-  width: 12px;
-  height: 16px;
-  background: url('../icons/zoom.png');
-  background-size: cover;
+  width: 8px;
+  height: 9px;
 }
+
 .PromoCard-coeur {
   align-self: center;
-  width: 11px;
-  height: 10px;
-  background: url('../icons/coeur.png');
-  background-size: cover;
+  width: 7px;
+  height: 6px;
 }
 
 .PromoCard-title {
   align-self: center;
   margin-top: 0;
-  color: #65bd45;
-  font-size: 13px;
+  color: var(--color-brand-green);
+  font-size: 5.5px;
   font-family: 'Gotham Rounded';
+  line-height: 7px;
 }
 
 .PromoCard-text {
   align-self: center;
   margin-top: 0;
-  color: #707070;
-  font-size: 12px;
+  color: solid var(--color-grey-light);
+  font-size: 5.5px;
   font-family: 'Gotham Rounded';
+  line-height: 7px;
   text-align: center;
 }
 
 .PromoCard-hr {
-  width: 20px;
-  background: #cfd2d1;
-  border: 1.25px solid #cfd2d1;
+  align-self: center;
+  width: 12px;
+  margin: 0;
+  background: var(--color-neutral-grey-2);
+  border: 1px solid var(--color-neutral-grey-2);
 }
 
 .PromoCard-price {
   align-self: center;
   margin-top: 0;
   color: #044435;
+  font-size: var(--font-size-sm);
   font-family: 'Gotham Rounded';
+}
+
+@media only screen and (min-width: 900px) {
+  .PromoCard-container {
+    width: 148.19px;
+    height: 212px;
+    padding: 10px 12px;
+  }
+
+  .PromoCard-img {
+    width: 102px;
+    height: 110px;
+  }
+  .PromoCard-zoom {
+    width: 12px;
+    height: 16px;
+  }
+  .PromoCard-coeur {
+    width: 11px;
+    height: 10px;
+  }
+
+  .PromoCard-title {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .PromoCard-text {
+    margin-top: 0;
+    font-size: var(-font-size-sm-2);
+  }
+
+  .PromoCard-hr {
+    width: 20px;
+  }
+
+  .PromoCard-price {
+    margin-top: 0;
+  }
 }
