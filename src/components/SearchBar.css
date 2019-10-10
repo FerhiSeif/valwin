@@ -1,7 +1,7 @@
 .SearchBar-container {
   position: absolute;
-  top: 122px;
-  left: 16px;
+  top: 83%;
+  left: 5%;
   z-index: 43;
   display: flex;
   width: 329px;
@@ -64,12 +64,22 @@
   font-size: var(--font-size-med);
   font-family: 'Gotham Rounded';
 }
+@media only screen and (min-width: 448px) {
+  .SearchBar-container {
+    top: 88%;
+    left: 23%;
+  }
+}
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 752px) {
+  .SearchBar-container {
+  }
+}
+
+@media only screen and (min-width: 960px) {
   .SearchBar-container {
     position: absolute;
-    top: 445px;
-    left: 148px;
+
     z-index: 43;
     width: 820px;
     height: 50px;
@@ -77,4 +87,7 @@
   .SearchBar-group-Button {
     width: 52px;
   }
+}
+
+@media only screen and (min-width: 1120px) {
 }

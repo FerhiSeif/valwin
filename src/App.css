@@ -83,6 +83,24 @@
    * Border radius
    */
   --border-radius: 4px;
+
+  /*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+  /**
+ * Breakpoints used in media queries
+ * 1) These are not the only breakpoints used, but they provide a few defaults
+ */
+
+  /* Mobile */
+  --bp-small: 28em; /* 448px */
+  /* Tablet */
+  --bp-med: 47em; /* 752px */
+  /* Laptop */
+  --bp-large: 60em; /* 960px */
+  /* Large screen */
+  --bp-xl: 70em; /* 1120px */
 }
 
 body {

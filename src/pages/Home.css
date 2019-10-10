@@ -69,7 +69,7 @@
   flex-direction: column;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 752px) {
   .Home-Promosection {
     position: relative;
     display: flex;

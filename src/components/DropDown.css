@@ -13,20 +13,30 @@ ul.MuiList-root.MuiList-padding {
 .DropDown-MenuList-Container {
   width: 44px;
   height: 44px;
-  background: var(--color-brand-green);
 }
 .DropDown-OpenMenueBtn {
-  width: 50px;
-  height: 56px;
+  width: 43px;
+  height: 43px;
   background: var(--color-brand-green);
 }
 
 .DropDown-ExitMenueBtn {
-  width: 50px;
-  height: 56px;
+  width: 43px;
+  height: 43fpx;
   background: var(--color-brand-green);
 }
 
 .DropDown-MenurList {
   width: 100%;
+}
+@media only screen and (max-width: 752px) {
+  ul.MuiList-root.MuiList-padding {
+    top: -3px;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  ul.MuiList-root.MuiList-padding {
+    top: -3px;
+  }
 }
