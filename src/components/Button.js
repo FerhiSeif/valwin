@@ -9,10 +9,12 @@ const Button = ({
   large,
   green,
   filtre,
+  medium,
   geolocalisation,
 }) => (
   <button
     className={clsx('Button', {
+      'Button--medium': medium,
       'Button--large': large,
       'Button--green': green,
       'Button--filtre': filtre,
@@ -30,6 +32,7 @@ Button.propTypes = {
   large: PropTypes.bool,
   green: PropTypes.bool,
   filtre: PropTypes.bool,
+  medium: PropTypes.bool,
   geolocalisation: PropTypes.bool,
 };
 

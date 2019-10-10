@@ -1,37 +1,60 @@
 .ImgContainer {
   position: relative;
-  width: 1153px;
-  height: 480px;
-  background: url('../images/jamie-brown-1216625-unsplash.jpg');
+  width: 362px;
+  height: 149px;
+  background: url('../images/smallimgback.png');
   background-size: cover;
 }
 .ImgComponent-text {
-  position: absolute;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
+  display: NONE;
 }
 
 .Img-Smile-Container {
   position: absolute;
-  right: 219px;
-  bottom: 116px;
-  width: 196px;
-  height: 72px;
+  right: 89px;
+  bottom: 59px;
+  width: 56px;
+  height: 23px;
   background: url('../icons/Smile.png');
   background-size: cover;
 }
-.GreenTitle-container {
-  width: 188px;
-  height: 6px;
-  padding: 20px 24px;
-  background: #11a63c;
-}
-.GreenTitle-text {
-  margin: 0;
-  color: #ecda38;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: 'Gotham Rounded';
-  line-height: 39%;
+
+@media only screen and (min-width: 900px) {
+  .ImgContainer {
+    position: relative;
+    width: 1153px;
+    height: 480px;
+    background: url('../images/jamie-brown-1216625-unsplash.jpg');
+    background-size: cover;
+  }
+  .ImgComponent-text {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Img-Smile-Container {
+    position: absolute;
+    right: 219px;
+    bottom: 116px;
+    width: 196px;
+    height: 72px;
+    background: url('../icons/Smile.png');
+    background-size: cover;
+  }
+  .GreenTitle-container {
+    width: 188px;
+    height: 6px;
+    padding: 20px 24px;
+    background: var(--color-brand-green);
+  }
+  .GreenTitle-text {
+    margin: 0;
+    color: var(--color-brand-yellow);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Gotham Rounded';
+    line-height: 39%;
+  }
 }

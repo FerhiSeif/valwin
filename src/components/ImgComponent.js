@@ -1,22 +1,24 @@
 import React from 'react';
-import WhiteTitle from './WhiteTitle';
+import TitleContainer from './TitleContainer';
 import './ImgComponent.css';
 
 const ImgComponent = () => (
   <div className="ImgComponent-container">
     <div className="ImgContainer">
       <div className="ImgComponent-text">
-        <div className="GreenTitle-container">
-          <p className="GreenTitle-text">Suivi personnalisé </p>
+        <div>
+          <TitleContainer green={true}>Suivi personnalisé</TitleContainer>
         </div>
         <div>
-          <WhiteTitle>Quelqu’un qui me connaît,</WhiteTitle>
+          <TitleContainer white={true}>
+            Quelqu’un qui me connaît,
+          </TitleContainer>
         </div>
         <div>
-          <WhiteTitle>connaît forcément mieux</WhiteTitle>
+          <TitleContainer white={true}>connaît forcément mieux</TitleContainer>
         </div>
         <div>
-          <WhiteTitle>mes besoins ! </WhiteTitle>
+          <TitleContainer white={true}>mes besoins ! </TitleContainer>
         </div>
       </div>
       <div className="Img-Smile-Container"></div>
