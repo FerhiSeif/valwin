@@ -1,12 +1,15 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import '../src/App.css';
-import WhiteTitle from '../src/components/WhiteTitle';
+import TitleContainer from '../src/components/TitleContainer';
 
 export default {
-  title: 'WhiteTitle',
+  title: 'Title',
 };
 
 export const whiteTitle = () => (
-  <WhiteTitle>Quelqu’un qui me connaît,</WhiteTitle>
+  <TitleContainer>Quelqu’un qui me connaît,</TitleContainer>
+);
+
+export const greenTitle = () => (
+  <TitleContainer>Quelqu’un qui me connaît,</TitleContainer>
 );
