@@ -40,12 +40,15 @@
   /**
    * Font Sizing
    */
-  --font-size-sm: 0.75rem;
-  --font-size-sm-2: 0.85rem;
-  --font-size-med: 1rem;
-  --font-size-med-2: 1.2rem;
-  --font-size-large: 2rem;
-  --font-size-xl: 3rem;
+  --font-size-sm: 0.75rem; /* 12px */
+  --font-size-sm-1: 0.8125rem; /* 13px */
+  --font-size-sm-2: 0.875rem; /* 14px */
+  --font-size-med: 1rem; /* 16px */
+  --font-size-med-1: 1.125rem; /* 18px */
+  --font-size-med-2: 1.25rem; /* 20px */
+  --font-size-large: 1.5rem; /* 24px */
+  --font-size-large-1: 1.625rem; /* 26px */
+  --font-size-xl: 2rem; /* 32px */
 
   /**
    * Line Height
@@ -83,10 +86,33 @@
    * Border radius
    */
   --border-radius: 4px;
+
+  /*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+  /**
+ * Breakpoints used in media queries
+ * 1) These are not the only breakpoints used, but they provide a few defaults
+ */
+
+  /* Mobile */
+  --bp-small: 28em; /* 448px */
+  /* Tablet */
+  --bp-med: 47em; /* 752px */
+  /* Laptop */
+  --bp-large: 60em; /* 960px */
+  /* Large screen */
+  --bp-xl: 70em; /* 1120px */
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./fonts/gothamroundedlight_21020.ttf');
 }

@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { imageArticle } from '../images/imageArticle.png';
+import imageArticle from '../images/imageArticle.png';
+import TextComponent from './TextComponent';
 import './ArticleList.css';
 
-class ArticleListe extends Component {
+class ArticleList extends Component {
   state = {
-    article: [
+    articles: [
+      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
+      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
       { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
       { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
     ],
@@ -12,11 +15,22 @@ class ArticleListe extends Component {
   render() {
     return (
       <div className="ArticleListe-container">
-        {this.state.article.map((article, i) => {
+        {this.state.articles.map((article, i) => {
           return (
-            <div className="ArticleCard-container">
-              <div
-                className="ArticleCard-imgContainer" /* src={require('../icons/imageArticle.png')}*/
+            <div
+              key={i}
+              className={`ArticleCard-container  ${
+                i % 2 == 0
+                  ? 'ArticleCard-containerShort'
+                  : 'ArticleCard-containerLong'
+              }`}
+            >
+              <img
+                src={article.img}
+                className={
+                  i % 2 == 0 ? 'ArticleCard-imgShort' : 'ArticleCard-imgLong'
+                }
+                alt="image Article"
               />
               <hr className="ArticleCard-hr" />
               <p className="ArticleCard-text"> {article.text}</p>
@@ -28,4 +42,4 @@ class ArticleListe extends Component {
   }
 }
 
-export default ArticleListe;
+export default ArticleList;

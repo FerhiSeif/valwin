@@ -1,0 +1,94 @@
+.SearchBar-container {
+  position: absolute;
+  top: 83%;
+  left: 5%;
+  z-index: 43;
+  display: flex;
+  width: 329px;
+  height: 42px;
+  margin-top: 10px;
+  background: var(--color-neutral-white);
+  box-shadow: -1px -1px 10px var(--color-grey-light);
+}
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  width: 751px;
+  height: 24px;
+  padding: 9px;
+  background: var(--color-neutral-white);
+}
+
+.SearchBar-text {
+  color: var(--color-brand-green);
+  font-size: var(--font-size-sm-2);
+  font-family: 'Gotham Rounded';
+}
+.SearchBar-Input {
+  border: none;
+}
+
+.SearchBar-Input:focus {
+  outline: none;
+}
+
+.SearchBar-group-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  background: #ecda38af;
+  border: none;
+  outline: none;
+}
+.SearchBar-group-Button:hover {
+  background: var(--color-brand-yellow);
+}
+
+::placeholder {
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  font-family: 'Gotham Rounded';
+}
+@media only screen and (min-width: 448px) {
+  .SearchBar-container {
+    top: 88%;
+    left: 23%;
+  }
+}
+
+@media only screen and (min-width: 752px) {
+  .SearchBar-container {
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .SearchBar-container {
+    position: absolute;
+
+    z-index: 43;
+    width: 820px;
+    height: 50px;
+  }
+  .SearchBar-group-Button {
+    width: 52px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+}

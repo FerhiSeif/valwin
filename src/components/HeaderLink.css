@@ -1,4 +1,12 @@
 .HeaderLink {
   color: var(--color-brand-green);
   font-size: var(--font-size-med-2);
+  font-family: 'Gotham Rounded';
+  text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+  .HeaderLink {
+    color: var(--color-brand-green);
+    font-size: var(--font-size-sm-2);
+  }
 }

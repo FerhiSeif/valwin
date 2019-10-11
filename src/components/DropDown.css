@@ -1,0 +1,42 @@
+ul.MuiList-root.MuiList-padding {
+  position: absolute;
+  top: 12px;
+  left: -5px;
+  width: 100%;
+  background: green;
+}
+
+.DropDown-container {
+  width: 42px;
+  height: 13px;
+}
+.DropDown-MenuList-Container {
+  width: 44px;
+  height: 44px;
+}
+.DropDown-OpenMenueBtn {
+  width: 43px;
+  height: 43px;
+  background: var(--color-brand-green);
+}
+
+.DropDown-ExitMenueBtn {
+  width: 43px;
+  height: 43fpx;
+  background: var(--color-brand-green);
+}
+
+.DropDown-MenurList {
+  width: 100%;
+}
+@media only screen and (max-width: 752px) {
+  ul.MuiList-root.MuiList-padding {
+    top: -3px;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  ul.MuiList-root.MuiList-padding {
+    top: -3px;
+  }
+}

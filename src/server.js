@@ -12,20 +12,25 @@ const helmet = Helmet.renderStatic();
 const server = express();
 server
   .disable('x-powered-by')
-  .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .get('/*', (req, res) => {
-    const context = {};
-    const markup = renderToString(
-      <StaticRouter context={context} location={req.url}>
-        <App />
-      </StaticRouter>
-    );
+  .use(express.static(process.env.RAZZLE_PUBLIC_DIR));
 
-    if (context.url) {
-      res.redirect(context.url);
-    } else {
-      res.status(200).send(
-        `<!doctype html>
+if (process.env.SERVE_STORYBOOK) {
+  server.use('/_storybook', express.static('./storybook-static'));
+}
+
+server.get('/*', (req, res) => {
+  const context = {};
+  const markup = renderToString(
+    <StaticRouter context={context} location={req.url}>
+      <App />
+    </StaticRouter>
+  );
+
+  if (context.url) {
+    res.redirect(context.url);
+  } else {
+    res.status(200).send(
+      `<!doctype html>
     <html lang="fr" ${helmet.htmlAttributes.toString()}>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -50,8 +55,8 @@ server
         <div id="root">${markup}</div>
     </body>
 </html>`
-      );
-    }
-  });
+    );
+  }
+});
 
 export default server;

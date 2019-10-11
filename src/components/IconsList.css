@@ -1,0 +1,49 @@
+.IconsList-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 228px;
+}
+
+.IconsList-img {
+  width: 25px;
+  height: 25px;
+}
+.IconsList-Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin-bottom: 13px;
+  margin-left: 13px;
+}
+.IconsList-text {
+  color: var(--color-neutral-grey);
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  font-family: 'Gotham Rounded';
+  text-align: left;
+}
+
+@media only screen and (min-width: 960px) {
+  .IconsList-text {
+    font-size: var(--font-size-sm-2);
+  }
+}
+@media only screen and (min-width: 1120px) {
+  .IconsList-text {
+    font-size: var(--font-size-med);
+  }
+
+  .IconsList-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 60px;
+  }
+  .IconsList-img {
+    width: 50px;
+    height: 50px;
+  }
+}

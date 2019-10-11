@@ -8,6 +8,11 @@
   text-align: center;
   border: 1px solid var(--color-neutral-grey);
 }
+.Button--medium {
+  font-weight: bold;
+  font-size: var(--font-size-sm-2);
+  background: var(--color-neutral-white);
+}
 
 .Button--large {
   font-size: var(--font-size-med-2);
@@ -28,4 +33,70 @@
   color: var(--color-neutral-white);
   background-color: var(--color-brand-green);
   transition: all 250ms ease;
+}
+.Button--filtre {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 200px;
+  font-size: var(--font-size-med-2);
+}
+
+.Button--filtre:hover {
+  color: var(--color-brand-green);
+  background-color: var(--color-grey-light);
+}
+
+.Button--geolocalisation {
+  display: flex;
+  padding: var(--spacing);
+  background-color: var(--color-neutral-white);
+  border: none;
+  box-shadow: -1px 4px 10px #aaaaaab5;
+}
+.icon-gelocalwhite {
+  display: none;
+}
+.Button--geolocalisation:hover {
+  color: var(--color-neutral-white);
+  background-color: var(--color-neutral-grey);
+}
+
+.Button--geolocalisation:hover .icon-gelocaldark {
+  display: none;
+}
+
+.Button--geolocalisation:hover .icon-gelocalwhite {
+  display: block;
+}
+
+.btn-gelocalText {
+  margin-left: 8px;
+}
+
+.Button--filtre:hover .icon-filterbtndark {
+  display: none;
+}
+
+.icon-filterbtngreen {
+  display: none;
+}
+
+.Button--filtre:hover .icon-filterbtngreen {
+  display: block;
+}
+
+/* .optionfilter{
+  display: none
+} */
+
+.Button--filtre:active .optionfilter {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  .Button--medium {
+    font-size: var(--font-size-med-2);
+    background: var(--color-neutral-white);
+  }
 }

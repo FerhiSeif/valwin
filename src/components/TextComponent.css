@@ -1,0 +1,48 @@
+.TextComponent {
+  color: var(--color-neutral-grey-2);
+  font-family: 'Gotham Rounded';
+  text-align: left;
+}
+
+.TextH2--large {
+  font-size: var(--font-size-med-2);
+}
+
+.TextH1--green {
+  margin: 0;
+  color: var(--color-brand-green);
+  font-size: var(--font-size-med);
+}
+
+.TextH3--small {
+  margin: 0;
+  font-size: var(--font-size-sm-2);
+  text-align: center;
+}
+
+.Text--telNumber {
+  color: var(--color-neutral-grey);
+  font-size: var(--font-size-xl);
+}
+
+.TextH1--black {
+  color: var(--color-neutral-grey);
+  font-size: var(--font-size-xl);
+}
+
+.TextComponent-bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1120px) {
+  .TextH1--green {
+    font-size: var(--font-size-large);
+  }
+  .TextH3--small {
+    font-size: var(--font-size-med-1);
+  }
+
+  .TextH2--large {
+    font-size: var(--font-size-large);
+  }
+}
