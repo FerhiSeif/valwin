@@ -1,8 +1,9 @@
 .ImgContainer {
   position: relative;
-  width: 362px;
   height: 149px;
   background: url('../images/smallimgback.png');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .ImgComponent-text {
@@ -19,19 +20,9 @@
   background-size: cover;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 448px) {
   .ImgContainer {
-    position: relative;
-    width: 1153px;
-    height: 480px;
-    background: url('../images/jamie-brown-1216625-unsplash.jpg');
-    background-size: cover;
-  }
-  .ImgComponent-text {
-    position: absolute;
-    top: 30%;
-    display: flex;
-    flex-direction: column;
+    height: 250px;
   }
 
   .Img-Smile-Container {
@@ -43,18 +34,42 @@
     background: url('../icons/Smile.png');
     background-size: cover;
   }
-  .GreenTitle-container {
-    width: 188px;
-    height: 6px;
-    padding: 20px 24px;
-    background: var(--color-brand-green);
+
+  @media only screen and (min-width: 752px) {
+    .ImgContainer {
+      height: 317px;
+    }
+
+    .ImgComponent-text {
+      position: absolute;
+      top: 30%;
+      display: flex;
+      flex-direction: column;
+    }
+    .GreenTitle-container {
+      width: 188px;
+      height: 6px;
+      padding: 20px 24px;
+      background: var(--color-brand-green);
+    }
+    .GreenTitle-text {
+      margin: 0;
+      color: var(--color-brand-yellow);
+      font-weight: bold;
+      font-size: 20px;
+      font-family: 'Gotham Rounded';
+      line-height: 39%;
+    }
   }
-  .GreenTitle-text {
-    margin: 0;
-    color: var(--color-brand-yellow);
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Gotham Rounded';
-    line-height: 39%;
+}
+@media only screen and (min-width: 752px) {
+  .ImgContainer {
+    height: 317px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .ImgContainer {
+    height: 488px;
   }
 }
