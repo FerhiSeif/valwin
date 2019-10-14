@@ -1,11 +1,15 @@
 .SearchBar-container {
   position: absolute;
-  top: 83%;
-  left: 5%;
+  top: 79%;
+  right: 0;
+  bottom: 0;
+  /* left: 5%;  */
+  left: 0;
   z-index: 43;
   display: flex;
   width: 329px;
   height: 42px;
+  margin: auto;
   margin-top: 10px;
   background: var(--color-neutral-white);
   box-shadow: -1px -1px 10px var(--color-grey-light);
@@ -67,20 +71,20 @@
 }
 @media only screen and (min-width: 448px) {
   .SearchBar-container {
-    top: 88%;
-    left: 23%;
+    top: 87%;
   }
 }
 
 @media only screen and (min-width: 752px) {
   .SearchBar-container {
+    top: 90%;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .SearchBar-container {
     position: absolute;
-
+    top: 89%;
     z-index: 43;
     width: 820px;
     height: 50px;
@@ -91,4 +95,7 @@
 }
 
 @media only screen and (min-width: 1120px) {
+  .SearchBar-container {
+    top: 93%;
+  }
 }

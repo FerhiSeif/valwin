@@ -5,13 +5,13 @@
 }
 
 .TextH2--large {
-  font-size: var(--font-size-med-2);
+  font-size: var(--font-size-sm);
 }
 
 .TextH1--green {
   margin: 0;
   color: var(--color-brand-green);
-  font-size: var(--font-size-med);
+  font-size: var(--font-size-med-1);
 }
 
 .TextH3--small {

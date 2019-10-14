@@ -14,7 +14,7 @@
   display: inline-block;
   padding: 1rem;
 }
-.Home-Introsection {
+.Home-Introduction {
   position: relative;
 }
 .Home-Promosection {
@@ -24,7 +24,7 @@
   align-items: center;
   height: 640px;
   padding-top: 60px;
-  background: #f6f6f6;
+  background: rgba(242, 242, 242, 0.7);
 }
 .Promosection-textContainer {
   width: 225px;
@@ -83,19 +83,25 @@
 @media only screen and (min-width: 448px) {
   .Home-Promosection-Cardlist {
     width: 369px;
+    padding-left: 35px;
   }
 
   .Home-Promosection-title {
     position: absolute;
     right: 0;
-    bottom: -73px;
+    bottom: -9px;
   }
+  /* .Home-Servicesection-title {
+    position: absolute;
+    right: 36%;
+    bottom: 0;
+} */
 }
-
 @media only screen and (min-width: 725px) {
   .Home-Promosection-Cardlist {
     display: flex;
     flex: 1;
+    justify-content: flex-end;
   }
   .Home-Articlesection {
     height: 411px;
@@ -126,11 +132,6 @@
     height: 313px;
     padding: 0 72px;
   }
-  .Home-Servicesection-title {
-    position: absolute;
-    right: 480px;
-    bottom: 0;
-  }
   .Servicesection-textContainer {
     flex: 1;
     align-self: end;
@@ -142,8 +143,12 @@
     align-items: center;
     height: 173px;
   }
+  .Home-Servicesection-title {
+    position: absolute;
+    right: 36%;
+    bottom: -15px;
+  }
 }
-
 @media only screen and (min-width: 960px) {
   .Home-Promosection {
     display: flex;
@@ -160,6 +165,11 @@
     flex: 1;
     justify-content: center;
   }
+  .Home-Servicesection-title {
+    position: absolute;
+    right: 36%;
+    bottom: -15px;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
@@ -171,14 +181,13 @@
   .PromoCardList-container {
     align-self: center;
     width: 100%;
+    height: AUTO;
+    padding-left: 0;
   }
 
   .Home-Promosection {
-    height: 450px;
-  }
-  .Home-Promosection-Cardlist {
-    display: flex;
-    width: 30%;
+    height: auto;
+    padding-left: 77px;
   }
   .Home-Articlesection {
     height: 587px;
@@ -189,13 +198,24 @@
   .Home-Promosection-Cardlist {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .Home-Servicesection-title {
+    position: absolute;
+    right: 36%;
+    bottom: -15px;
   }
 }
 
 @media only screen and (min-width: 1580px) {
-  .PromoCardList-container {
+  /* .PromoCardList-container {
     align-self: center;
     width: 70%;
+  } */
+  .Home-Servicesection-title {
+    right: 39%;
+    bottom: -18px;
   }
 }

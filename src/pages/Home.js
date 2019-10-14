@@ -22,7 +22,7 @@ const Home = () => (
         },
       ]}
     ></Helmet>
-    <section className="Home-Introsection">
+    <section className="Home-Introduction">
       <ImgComponent />
       <SearchBar />
     </section>
@@ -51,7 +51,7 @@ const Home = () => (
         <TitleContainer white={true}> au prix qui me va bien!</TitleContainer>
       </div>
     </section>
-    <section className="Home-Articlesection">
+    {/* <section className="Home-Articlesection">
       <TextComponent large={true}>
         Nos derniers <span className="TextComponent-bold">articles</span>
       </TextComponent>
@@ -81,7 +81,7 @@ const Home = () => (
           au prix qui me va bien!
         </TitleContainer>
       </div>
-    </section>
+    </section>   */}
   </Layout>
 );
 
