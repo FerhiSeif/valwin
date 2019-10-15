@@ -1,8 +1,8 @@
 .ArticleListe-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   width: 362px;
+  margin-bottom: 20px;
 }
 
 .ArticleCard-container {
@@ -11,8 +11,8 @@
   padding: 5px;
   background: var(--color-neutral-white);
   border: 1px solid var(--color-grey-light);
-  box-shadow: 0px 3px 2px 0px var(--color-grey-light);
   border: 1px solid;
+  box-shadow: 0px 3px 2px 0px var(--color-grey-light);
 }
 
 .ArticleCard-containerShort {
@@ -48,10 +48,10 @@
   font-size: var(--font-size-sm);
   font-family: 'Gotham Rounded';
 }
-@media only screen and (min-width:752px) {
+@media only screen and (min-width: 752px) {
   .ArticleListe-container {
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
   .ArticleCard-container {
     margin-right: 12px;

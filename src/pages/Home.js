@@ -51,7 +51,7 @@ const Home = () => (
         <TitleContainer white={true}> au prix qui me va bien!</TitleContainer>
       </div>
     </section>
-     <section className="Home-Articlesection">
+    <section className="Home-Articlesection">
       <p className="Home-Articlesection-Title" large={true}>
         Nos derniers <span className="TextComponent-bold">articles</span>
       </p>
@@ -81,7 +81,7 @@ const Home = () => (
           au prix qui me va bien!
         </TitleContainer>
       </div>
-    </section>   */}
+    </section>
   </Layout>
 );
 

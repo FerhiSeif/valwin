@@ -2,7 +2,6 @@ import React from 'react';
 import pluscirclewhite from '../icons/pluscirclewhite.svg';
 import pluscircleyellow from '../icons/pluscircleyellow.svg';
 import pluscirclegreen from '../icons/pluscirclegreen.svg';
-
 import './PartnerSurvol.css';
 
 const PartnerSurvol = ({ color }) => {

@@ -51,10 +51,10 @@
   height: 573px;
   padding-top: 17px;
 }
-.Home-Articlesection-Title{
+.Home-Articlesection-Title {
   color: var(--color-neutral-grey-2);
-  font-family: 'Gotham Rounded';
   font-size: var(--font-size-med-1);
+  font-family: 'Gotham Rounded';
 }
 .Home-Servicesection {
   display: flex;
@@ -96,7 +96,6 @@
     right: 0;
     bottom: -9px;
   }
- 
 }
 @media only screen and (min-width: 725px) {
   .Home-Promosection-Cardlist {
@@ -116,9 +115,9 @@
   }
 
   .Home-Promosection-info {
-   align-items: flex-start;
-  flex: 1;
-  padding:77px
+    flex: 1;
+    align-items: flex-start;
+    padding: 77px;
   }
   .Home-Promosection-title {
     position: absolute;
@@ -149,11 +148,10 @@
     right: 36%;
     bottom: -15px;
   }
-   .Promosection-textContainer {
-  
+  .Promosection-textContainer {
     height: 94px;
-  } 
-  .Home-Articlesection-Title{
+  }
+  .Home-Articlesection-Title {
     font-size: var(--font-size-med-2);
   }
 }
@@ -183,7 +181,7 @@
     width: 90%;
     height: 95px;
   }
-  .Home-Articlesection-Title{
+  .Home-Articlesection-Title {
     font-size: var(--font-size-large);
   }
 }
@@ -194,7 +192,6 @@
     display: flex;
     flex: 1;
   }
-
 
   .Home-Promosection {
     height: 448px;
@@ -219,13 +216,12 @@
     bottom: -15px;
   }
   .Home-Promosection-info {
-    height: 398px;
     flex: 1;
+    height: 398px;
   }
 }
 
 @media only screen and (min-width: 1580px) {
-
   .Home-Servicesection-title {
     right: 39%;
     bottom: -18px;

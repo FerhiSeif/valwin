@@ -33,7 +33,7 @@ class ArticleList extends Component {
                 alt="image Article"
               />
               <hr className="ArticleCard-hr" />
-              <p className="ArticleCard-text"> {article.text}</p>
+              <TextComponent small={true}> {article.text}</TextComponent>
             </div>
           );
         })}

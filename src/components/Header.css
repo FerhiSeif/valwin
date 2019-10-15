@@ -61,6 +61,12 @@
 .Header-top-logo {
   flex: 2;
 }
+.Header-link-logo {
+  margin-right: 9px;
+}
+.Header-top-logo {
+  flex: 2;
+}
 
 .HeaderLink {
   margin-right: 10px;
