@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 640px;
+  height: 602px;
   padding-top: 60px;
   background: rgba(242, 242, 242, 0.7);
 }
@@ -49,20 +49,26 @@
   flex-direction: column;
   align-items: center;
   height: 573px;
-  padding-top: 17px;
+  padding-top: 84px;
 }
-.Home-Articlesection-Title{
+.Home-Articlesection-Title {
   color: var(--color-neutral-grey-2);
-  font-family: 'Gotham Rounded';
   font-size: var(--font-size-med-1);
+  font-family: 'Gotham Rounded';
+}
+.Home-Servicesection-container {
+  display: flex;
+  justify-content: center;
+  height: 464px;
 }
 .Home-Servicesection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 364px;
-  padding-top: 94px;
+  width: 329px;
+  height: 410px;
+  padding-top: 68px;
 }
 .Servicesection-textContainer {
   display: flex;
@@ -82,7 +88,7 @@
 .Home-Promosection-title {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -69px;
 }
 
 @media only screen and (min-width: 448px) {
@@ -94,18 +100,31 @@
   .Home-Promosection-title {
     position: absolute;
     right: 0;
-    bottom: -9px;
+    bottom: -56px;
   }
- 
+
+  .Home-Promosection {
+    height: 653px;
+  }
 }
+
 @media only screen and (min-width: 725px) {
+  .Home-Promosection-contain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Home-Servicesection-container {
+    height: 313px;
+  }
+
   .Home-Promosection-Cardlist {
     display: flex;
     flex: 1;
     justify-content: flex-end;
   }
   .Home-Articlesection {
-    height: 573px;
+    /* height: 573px; */
     padding-top: 76px;
   }
   .Home-Promosection {
@@ -116,9 +135,9 @@
   }
 
   .Home-Promosection-info {
-   align-items: flex-start;
-  flex: 1;
-  padding:77px
+    flex: 1;
+    align-items: flex-start;
+    padding: 77px;
   }
   .Home-Promosection-title {
     position: absolute;
@@ -130,8 +149,9 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    width: 100%;
     height: 313px;
-    padding: 0 72px;
+    padding: 72px 20px;
   }
   .Servicesection-textContainer {
     flex: 1;
@@ -147,22 +167,30 @@
   .Home-Servicesection-title {
     position: absolute;
     right: 36%;
-    bottom: -15px;
+    bottom: 113px;
   }
-   .Promosection-textContainer {
-  
+  .Promosection-textContainer {
     height: 94px;
-  } 
-  .Home-Articlesection-Title{
+  }
+  .Home-Articlesection-Title {
     font-size: var(--font-size-med-2);
   }
 }
+
+@media only screen and (min-width: 752px) {
+  .Home-Articlesection {
+    height: 396px;
+    padding-top: 76px;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .Home-Promosection {
     display: flex;
+    height: 429px;
   }
   .Home-Articlesection {
-    height: 587px;
+    height: 423px;
   }
   .Servicesection-textContainer {
     height: 149px;
@@ -170,21 +198,29 @@
   .Home-Promosection-Cardlist {
     /* width: 57%; */
     display: flex;
-    flex: 1;
+    flex: 2;
     justify-content: center;
+    padding-top: 100px;
   }
   .Home-Servicesection-title {
     position: absolute;
     right: 36%;
-    bottom: -15px;
+    bottom: 126px;
   }
 
   .Promosection-textContainer {
     width: 90%;
-    height: 95px;
+    height: 145px;
   }
-  .Home-Articlesection-Title{
+  .Home-Articlesection-Title {
     font-size: var(--font-size-large);
+  }
+
+  .Home-Servicesection {
+    padding: 72px 68px;
+  }
+  .Home-Promosection-info {
+    height: 362px;
   }
 }
 
@@ -193,15 +229,15 @@
     /* width: 57%; */
     display: flex;
     flex: 1;
+    padding-top: 115px;
   }
-
 
   .Home-Promosection {
     height: 448px;
     padding-left: 77px;
   }
   .Home-Articlesection {
-    height: 587px;
+    height: 548px;
   }
   .Servicesection-textContainer {
     height: 149px;
@@ -216,22 +252,25 @@
   .Home-Servicesection-title {
     position: absolute;
     right: 36%;
-    bottom: -15px;
+    bottom: 97px;
   }
   .Home-Promosection-info {
-    height: 398px;
     flex: 1;
+    height: 326px;
+    padding-top: 0px;
+  }
+  .Home-Servicesection {
+    padding-top: 94px;
+    padding-right: 90px;
+    padding-left: 98px;
+  }
+  .Home-Servicesection-container {
+    height: 366px;
   }
 }
 
 @media only screen and (min-width: 1580px) {
-
-  .Home-Servicesection-title {
-    right: 39%;
-    bottom: -18px;
-  }
-  /* .Home-Promosection-info {
-    height: 331px;
-    flex: 1;
+  /* .Home-Servicesection-container{
+   padding:0 146px
   } */
 }

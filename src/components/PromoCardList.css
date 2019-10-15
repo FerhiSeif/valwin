@@ -5,9 +5,9 @@
 }
 
 @media only screen and (min-width: 960px) {
-  /* .PromoCardList-container {
-    width: 80%;
-  } */
+  .PromoCardList-container {
+    width: 508px;
+  }
 }
 
 @media only screen and (min-width: 1120px) {

@@ -28,6 +28,7 @@
   width: 12px;
   height: 160px;
   margin: 0;
+  margin-left: 20px;
   border: none;
   border-left: 1px solid white;
 }
@@ -111,7 +112,8 @@
     width: 75px;
   }
   .Footer-logo {
-    width: 123px;
+    width: 65px;
+    height: 23px;
   }
   .Footer-list-item {
     margin-bottom: 5px;
