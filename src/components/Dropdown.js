@@ -48,7 +48,7 @@ export default function MenuListComposition() {
           {open == false ? (
             <img
               className="DropDown-OpenMenueBtn"
-              src={require('../icons/menu1.svg')}
+              src={require('../icons/menu.svg')}
               alt="Open-Menue-List"
             />
           ) : (
