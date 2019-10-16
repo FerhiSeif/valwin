@@ -9,7 +9,6 @@
 }
 
 .TextH1--green {
-  margin: 0;
   color: var(--color-brand-green);
   font-size: var(--font-size-med-1);
 }
@@ -32,6 +31,12 @@
 
 .TextComponent-bold {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 723px) {
+  .TextH3--small {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 752px) {

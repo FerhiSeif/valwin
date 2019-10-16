@@ -11,16 +11,25 @@
   padding: 5px;
   background: var(--color-neutral-white);
   border: 1px solid var(--color-grey-light);
-  border: 1px solid;
-  box-shadow: 0px 3px 2px 0px var(--color-grey-light);
+  box-shadow: 2px 4px 11px -4px var(--color-neutral-grey-2);
 }
-
+.ArticleListe-blocArticle {
+  display: flex;
+  flex-direction: column;
+  height: 521px;
+}
+.ArticleListe-blocAricleReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .ArticleCard-containerShort {
   width: 160px;
   height: 210px;
+  background-color: 'red';
 }
 
 .ArticleCard-containerLong {
+  flex: 1;
   width: 160px;
   height: 239px;
 }
@@ -49,9 +58,20 @@
   font-family: 'Gotham Rounded';
 }
 @media only screen and (min-width: 752px) {
+  .ArticleListe-blocAricle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ArticleListe-blocAricleReverse {
+    display: flex;
+    flex-direction: row;
+  }
+
   .ArticleListe-container {
     justify-content: center;
     width: 100%;
+    margin-bottom: 41px;
   }
   .ArticleCard-container {
     margin-right: 12px;
@@ -59,6 +79,10 @@
 }
 
 @media only screen and (min-width: 1120px) {
+  .ArticleListe-container {
+    margin-bottom: 71px;
+  }
+
   .ArticleCard-containerShort {
     width: 236px;
     height: 312px;

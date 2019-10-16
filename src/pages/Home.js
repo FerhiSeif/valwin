@@ -43,6 +43,7 @@ const Home = () => (
         </div>
         <Button medium={true}>Toutes les promotions</Button>
       </div>
+
       <div className="Home-Promosection-title">
         <TitleContainer green={true} C>
           {' '}
@@ -58,28 +59,30 @@ const Home = () => (
       <ArticleList />
       <Button medium={true}>Tous les articles</Button>
     </section>
-    <section className="Home-Servicesection">
-      <div className="Servicesection-textContainer">
-        <TextComponent green={true}>
-          Nos <span className="TextComponent-bold">service</span>{' '}
-        </TextComponent>
-        <TextComponent small={true}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </TextComponent>
-      </div>
-      <div className="Home-ServicesectionIcont-cont">
-        <IconsList />
-      </div>
-      <div className="Home-Servicesection-title">
-        <TitleContainer textWhite={true}>
-          {' '}
-          Tout ce dont j'ai besoin.
-        </TitleContainer>
-        <TitleContainer white={true} className="fff">
-          {' '}
-          au prix qui me va bien!
-        </TitleContainer>
+    <section className="Home-Servicesection-container">
+      <div className="Home-Servicesection">
+        <div className="Servicesection-textContainer">
+          <TextComponent green={true}>
+            Nos <span className="TextComponent-bold">services</span>{' '}
+          </TextComponent>
+          <TextComponent small={true}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </TextComponent>
+        </div>
+        <div className="Home-ServicesectionIcont-cont">
+          <IconsList />
+        </div>
+        <div className="Home-Servicesection-title">
+          <TitleContainer textWhite={true}>
+            {' '}
+            Tout ce dont j'ai besoin.
+          </TitleContainer>
+          <TitleContainer white={true} className="fff">
+            {' '}
+            au prix qui me va bien!
+          </TitleContainer>
+        </div>
       </div>
     </section>
   </Layout>

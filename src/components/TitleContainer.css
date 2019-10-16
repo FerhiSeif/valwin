@@ -33,10 +33,10 @@
 
 @media only screen and (min-width: 960px) {
   .TitleContaine-white {
-    font-size: var(--font-size-med-2);
+    font-size: var(--font-size-large);
   }
   .TitleContainer-green {
-    font-size: var(--font-size-med-2);
+    font-size: var(--font-size-med-1);
   }
   .TitleContaine-textwhite {
     font-size: var(--font-size-med);
