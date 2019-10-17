@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
@@ -21,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MenuListComposition() {
   const classes = useStyles();
-  const [open, setOpen, setButton] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
@@ -45,7 +44,7 @@ export default function MenuListComposition() {
           onClick={handleToggle}
           className="DropDown-MenuList-Container"
         >
-          {open == false ? (
+          {open === false ? (
             <img
               className="DropDown-OpenMenueBtn"
               src={require('../icons/menu.svg')}
