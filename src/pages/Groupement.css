@@ -1,17 +1,141 @@
+.Groupement-definition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 316px;
+  padding: 34px;
+  background: #f6f6f6;
+}
 .Groupement-defSection-img {
   position: relative;
+  margin-top: 52px;
 }
 .pharmadep-image {
-  width: 100%;
+  width: 281px;
+  height: 269px;
 }
+
 .logo-pharma {
   position: absolute;
-  top: 0;
+  top: 54px;
   right: 0;
   bottom: 318px;
   left: 0;
   width: 95px;
   margin: auto;
+  padding: 8px 13px;
   background: var(--color-neutral-white);
+  border-radius: 4px;
+}
+.Groupement-Virtuessection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.assembledsection-Title {
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med-1);
+  font-family: 'Gotham Rounded';
+}
+.Groupement-Valuessection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Valuessection-valuesimage {
+  display: none;
+}
+.Groupement-defSection-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 281px;
 }
 
+@media only screen and (min-width: 448px) {
+}
+
+@media only screen and (min-width: 752px) {
+  .assembledsection-VirtuesCardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Groupement-definition {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Groupement-Virtuessection {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .Groupement-defSection-img {
+    margin-top: 165px;
+  }
+  .Groupement-defSection-text {
+    width: 408px;
+  }
+
+  .Groupement-definition {
+    justify-content: space-around;
+    height: 348px;
+    padding: 58px 106px;
+  }
+  .assembledsection-VirtuesCardList {
+    width: 960px;
+  }
+
+  .assembledsection-Title {
+    font-size: var(--font-size-large);
+  }
+  .Valuessection-valuesimage-Conatiner {
+    display: flex;
+  }
+  .Valuessection-valuesimage {
+    display: block;
+    width: 208px;
+    height: 632px;
+  }
+
+  .pharmadep-image {
+    width: 459px;
+    height: 438px;
+  }
+  .logo-pharma {
+    top: -117px;
+    width: 161px;
+    height: 53px;
+    padding: 10px;
+  }
+
+  .Groupement-Virtuessection {
+    margin-top: 77px;
+  }
+  .Groupement-Valuessection {
+    height: 632px;
+    background: #f6f6f6;
+  }
+  .Home-Servicesection-title {
+    position: absolute;
+    right: 36%;
+    bottom: -19px;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  .Valuessection-valuesimage {
+    display: block;
+    width: 234px;
+    height: 632px;
+  }
+  .Groupement-defSection-text {
+    width: 408px;
+  }
+  .Groupement-Virtuessection {
+    margin-top: 77px;
+  }
+}

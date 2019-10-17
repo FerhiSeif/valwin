@@ -1,0 +1,73 @@
+.assembledsection-roles {
+  display: flex;
+  align-items: center;
+  width: 257px;
+  height: 51.91px;
+  margin-bottom: 9px;
+  padding: 25px 31px;
+  border-radius: 2px;
+}
+.assembledsection-rolesGreen {
+  background: var(--color-brand-green);
+}
+.assembledsection-rolesGreenLight {
+  background: var(--color-brand-green-light);
+}
+.assembledsection-rolesYellow {
+  background: var(--color-brand-yellow);
+}
+.assembledsection-rolesYellowLight {
+  background: var(--color-brand-yellow-light);
+}
+
+.assembledsection-roles-Number {
+  flex: 1;
+  font-weight: bold;
+  font-family: 'Gotham Rounded';
+}
+
+.TextWhite {
+  color: var(--color-neutral-white);
+}
+.TextGreen {
+  color: var(--color-brand-green);
+}
+.TextYellow {
+  color: var(--color-brand-yellow);
+}
+
+.assembledsection-rolesPargraph {
+  flex: 3;
+}
+
+.rolesPargraph-title {
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+}
+.rolesPargraph-text {
+  font-size: var(--font-size-sm);
+}
+
+@media only screen and (min-width: 752px) {
+  .assembledsection-roles {
+    margin: 9px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .assembledsection-roles {
+    width: 369px;
+    height: 70px;
+    margin: 23px;
+  }
+  .assembledsection-roles-Number {
+    font-size: var(--font-size-xl);
+  }
+  .rolesPargraph-title {
+    font-weight: bold;
+    font-size: var(--font-size-med);
+  }
+  .rolesPargraph-text {
+    font-size: var(--font-size-med);
+  }
+}

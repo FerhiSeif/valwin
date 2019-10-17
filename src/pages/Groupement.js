@@ -1,11 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from './Layout';
-import logo1 from '../icons/logo.svg';
+import logo from '../icons/logo.svg';
 import pharmadep from '../images/local.png';
+import imageValeur from '../images/imageValeur.png';
 import ImgComponent from '../components/ImgComponent';
+import ValuesCardList from '../components/ValuesCardList';
+import VirtuesCardList from '../components/VirtuesCardList';
+import TitleContainer from '../components/TitleContainer';
 import TextComponent from '../components/TextComponent';
-
 import './Groupement.css';
 
 const Groupement = () => (
@@ -28,7 +31,7 @@ const Groupement = () => (
           Qui <span className="TextComponent-bold">somme-nous</span>
         </TextComponent>
 
-        <TextComponent large={true}>
+        <TextComponent small={true}>
           {' '}
           Nous Sommes un{' '}
           <span className="TextComponent-bold">
@@ -37,7 +40,7 @@ const Groupement = () => (
           </span>
         </TextComponent>
         <br />
-        <TextComponent large={true}>
+        <TextComponent small={true}>
           {' '}
           Nous Sommes un{' '}
           <span className="TextComponent-bold">
@@ -52,12 +55,39 @@ const Groupement = () => (
         </TextComponent>
       </div>
       <div className="Groupement-defSection-img">
-        <img src={logo1} className="logo-pharma" alt="logo normandie pharma" />
+        <img src={logo} className="logo-pharma" alt="logo normandie pharma" />
+        <img src={pharmadep} className="pharmadep-image" alt="logo immeuble" />
+      </div>
+    </section>
+    <section className="Groupement-Virtuessection">
+      <p className="assembledsection-Title" large={true}>
+        Qui se ressemble, <span className="TextComponent-bold">s'assemble</span>
+      </p>
+      <div className="assembledsection-VirtuesCardList">
+        <VirtuesCardList />
+      </div>
+    </section>
+    <section className="Groupement-Valuessection">
+      <p className="assembledsection-Title">
+        Nos <span className="TextComponent-bold">valeurs</span>
+      </p>
+      <div className="Valuessection-valuesimage-Conatiner">
         <img
-          src={pharmadep}
-          className="pharmadep-image"
-          alt="logo normandie pharma"
+          src={imageValeur}
+          className="Valuessection-valuesimage"
+          alt="smile image"
         />
+        <ValuesCardList />
+      </div>
+      <div className="Home-Servicesection-title">
+        <TitleContainer textWhite={true}>
+          {' '}
+          Tout ce dont j'ai besoin.
+        </TitleContainer>
+        <TitleContainer white={true} className="fff">
+          {' '}
+          au prix qui me va bien!
+        </TitleContainer>
       </div>
     </section>
   </Layout>

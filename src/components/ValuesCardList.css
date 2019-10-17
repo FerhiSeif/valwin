@@ -1,0 +1,134 @@
+.ValuesCardList-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 362px;
+  margin-bottom: 20px;
+}
+
+.ValuesCard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  margin: 7px;
+  padding: 40px 3px;
+  background: var(--color-neutral-white);
+  border: 1px solid var(--color-grey-light);
+  box-shadow: 2px 4px 11px -4px var(--color-neutral-grey-2);
+}
+.ValuesCard-img {
+  width: 28px;
+  height: 10px;
+}
+.ValuesCardList-blocArticle {
+  display: flex;
+  flex-direction: column;
+  height: 521px;
+}
+.ValuesCardList-blocAricleReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.ValuesCard-containerShort {
+  height: 26px;
+}
+
+.ValuesCard-containerLong {
+  height: 46px;
+}
+
+.ValuesCard-container:hover {
+  border: 1px solid var(--color-brand-yellow);
+}
+
+/* .ValuesCard-imgShort {
+  width: 159px;
+  height: 144px;
+}
+.ValuesCard-imgLong {
+  width: 159px;
+  height: 164px;
+} */
+.ValuesCard-hr {
+  width: 23px;
+  border: 1px solid var(--color-brand-yellow);
+}
+.ValuesCard-text {
+  padding-left: 11px;
+  color: var(--color-neutral-grey-2);
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  font-family: 'Gotham Rounded';
+  text-align: center;
+}
+
+@media only screen and (min-width: 752px) {
+  /* .ValuesCardList-blocAricle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ValuesCardList-blocAricleReverse {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ValuesCard-container {
+    margin-right: 12px;
+  } */
+}
+@media only screen and (min-width: 960px) {
+  .ValuesCardList-container {
+    width: 754px;
+  }
+
+  .ValuesCard-container {
+    width: 219.24px;
+    margin-right: 16px;
+  }
+  .ValuesCard-containerShort {
+    height: 193px;
+  }
+
+  .ValuesCard-containerLong {
+    height: 243px;
+  }
+  .ValuesCard-text {
+    width: 200px;
+    font-size: var(--font-size-med);
+  }
+  .ValuesCard-hr {
+    width: 52px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  /* .ValuesCardList-container {
+    margin-bottom: 71px;
+  }
+
+  .ValuesCard-containerShort {
+    width: 236px;
+    height: 312px;
+  }
+  .ValuesCard-containerLong {
+    width: 236px;
+    height: 352px;
+  }
+
+  .ValuesCard-imgShort {
+    width: 236px;
+    height: 212px;
+  }
+  .ValuesCard-imgLong {
+    width: 236px;
+    height: 243px;
+  }
+  .ValuesCard-text {
+    padding-left: 11px;
+    font-weight: 600;
+    font-size: var(--font-size-med);
+  } */
+}

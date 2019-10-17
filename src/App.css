@@ -40,6 +40,8 @@
   /**
    * Font Sizing
    */
+  --font-size-xs: 0.5rem; /* 8px */
+  --font-size-xs-1: 0.625rem; /* 10px */
   --font-size-sm: 0.75rem; /* 12px */
   --font-size-sm-1: 0.8125rem; /* 13px */
   --font-size-sm-2: 0.875rem; /* 14px */

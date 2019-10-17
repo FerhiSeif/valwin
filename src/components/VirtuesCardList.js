@@ -1,0 +1,67 @@
+import React from 'react';
+
+import './VirtuesCardList.css';
+
+const color = ['Green', 'YellowLight', 'GreenLight', 'Yellow'];
+const Virtues = [
+  {
+    number: 'O1',
+    title: 'La responsabilité',
+    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+  },
+  {
+    number: 'O2',
+    title: 'La responsabilité',
+    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+  },
+  {
+    number: 'O3',
+    title: 'La responsabilité',
+    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+  },
+  {
+    number: 'O4',
+    title: 'La responsabilité',
+    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+  },
+];
+
+const VirtuesCardList = () =>
+  Virtues.map((elem, i) => {
+    return (
+      <div
+        key={i}
+        className={`assembledsection-roles assembledsection-roles${color[i]}`}
+      >
+        <p
+          className={`assembledsection-roles-Number ${
+            color[i] === 'Green' || color[i] === 'Yellow'
+              ? 'TextWhite'
+              : color[i] === 'YellowLight'
+              ? 'TextYellow'
+              : color[i] === 'GreenLight'
+              ? 'TextGreen'
+              : ''
+          }`}
+        >
+          {elem.number}.
+        </p>
+        <div
+          className={`assembledsection-rolesPargraph ${
+            color[i] === 'Green' || color[i] === 'Yellow'
+              ? 'TextWhite'
+              : color[i] === 'YellowLight'
+              ? 'TextYellow'
+              : color[i] === 'GreenLight'
+              ? 'TextGreen'
+              : ''
+          }`}
+        >
+          <p className="rolesPargraph-title">{elem.title}</p>
+          <p className="rolesPargraph-text">{elem.text} </p>
+        </div>
+      </div>
+    );
+  });
+
+export default VirtuesCardList;
