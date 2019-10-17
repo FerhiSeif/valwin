@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import imageArticle from '../images/imageArticle.png';
-import TextComponent from './TextComponent';
 import './ArticleList.css';
 
 class ArticleList extends Component {
@@ -16,35 +15,33 @@ class ArticleList extends Component {
   };
 
   _generateElemnts(listCards, reverse) {
-    var listElements = [];
-    {
-      listCards.map((article, i) => {
-        listElements.push(
-          <div
-            key={i}
-            className={`ArticleCard-container  ${
-              i % 2 == 0
-                ? 'ArticleCard-containerShort'
-                : 'ArticleCard-containerLong'
-            }`}
-          >
-            <img
-              src={article.img}
-              className={
-                i % 2 == 0 ? 'ArticleCard-imgShort' : 'ArticleCard-imgLong'
-              }
-              alt="image Article"
-            />
-            <hr className="ArticleCard-hr" />
-            <p className="ArticleCard-text"> {article.text}</p>
-          </div>
-        );
-      });
-    }
+    var listElements = listCards.map((article, i) => (
+      <div
+        key={i}
+        className={`ArticleCard-container  ${
+          i % 2 === 0
+            ? 'ArticleCard-containerShort'
+            : 'ArticleCard-containerLong'
+        }`}
+      >
+        <img
+          src={article.img}
+          className={
+            i % 2 === 0 ? 'ArticleCard-imgShort' : 'ArticleCard-imgLong'
+          }
+          alt="Article"
+        />
+        <hr className="ArticleCard-hr" />
+        <p className="ArticleCard-text"> {article.text}</p>
+      </div>
+    ));
+
     return (
       <div
         className={
-          reverse ? 'ArticleListe-blocAricleReverse' : 'ArticleListe-blocAricle'
+          reverse
+            ? 'ArticleListe-blocArticleReverse'
+            : 'ArticleListe-blocArticle'
         }
       >
         {listElements}

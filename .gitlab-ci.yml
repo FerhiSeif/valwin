@@ -20,6 +20,20 @@ stages:
 #     - npm run test
 
 # Template for deployments
+deploy_feature:
+  stage: deploy
+  when: manual
+  except:
+    - dev
+    - staging
+    - prod
+  before_script:
+    - git config --global user.email "tech@valwin.fr"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add cleverdev https://$CLEVER_TOKEN:$CLEVER_SECRET@push-par-clevercloud-customers.services.clever-cloud.com/$CLEVER_APPID_DEV.git
+    - git push --verbose --force cleverdev HEAD:master 2>&1 | grep -e 'remote:' -e '->'
+
 deploy_dev:
   stage: deploy
   only:

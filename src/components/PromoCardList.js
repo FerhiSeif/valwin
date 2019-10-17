@@ -49,6 +49,7 @@ class PromoCardList extends Component {
       <div className="PromoCardList-container">
         {this.state.propmolists.map((article, i) => (
           <PromoCard
+            key={i}
             promoImg={article.img}
             promoTitle={article.title}
             promoText={article.text}

@@ -14,11 +14,11 @@ import './Groupement.css';
 const Groupement = () => (
   <Layout>
     <Helmet
-      title="Normadie Pharma - Accueil"
+      title="Normandie Pharma - Accueil"
       meta={[
         {
           name: 'description',
-          content: 'Normadie Pharma - Pharmacies made in Normandie !',
+          content: 'Normandie Pharma - Pharmacies made in Normandie !',
         },
       ]}
     ></Helmet>

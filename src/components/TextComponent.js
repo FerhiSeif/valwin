@@ -21,9 +21,9 @@ TextComponent.propTypes = {
   children: PropTypes.node,
   telNumber: PropTypes.bool,
   large: PropTypes.bool,
-  green: PropTypes.bool,
-  large: PropTypes.bool,
   black: PropTypes.bool,
+  green: PropTypes.bool,
+  small: PropTypes.bool,
 };
 
 export default TextComponent;

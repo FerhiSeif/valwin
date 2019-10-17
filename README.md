@@ -1,10 +1,10 @@
-![Logo de Normadie Pharma](./src/icons/logo.svg)
+![Logo de Normandie Pharma](./src/icons/logo.svg)
 
 # Normandie Pharma
 
 > Site du groupement Normandie Pharma
 
-Site vitrine du groupement Normadie Pharma.
+Site vitrine du groupement Normandie Pharma.
 
 ## Developing
 

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MenuListComposition() {
   const classes = useStyles();
-  const [open, setOpen, setButton] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
@@ -34,7 +34,6 @@ export default function MenuListComposition() {
 
     setOpen(false);
   };
-  console.log('open : ', open);
   return (
     <div className={classes.root}>
       <div style={{ height: '88px', width: '30px' }}>
@@ -44,17 +43,19 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          {open == false ? (
+          {open === false ? (
             <img
               src={require('../images/openNav.png')}
               style={{ background: 'green' }}
               width="64px"
+              alt="Ouvrir"
             />
           ) : (
             <img
               src={require('../images/closeNav.png')}
               style={{ background: 'green' }}
               width="64px"
+              alt="Fermer"
             />
           )}
         </Button>

@@ -7,11 +7,11 @@ const Pharmacies = () => {
   return (
     <Layout>
       <Helmet
-        title="Normadie Pharma - Pharmacies"
+        title="Normandie Pharma - Pharmacies"
         meta={[
           {
             name: 'description',
-            content: 'Normadie Pharma - Pharmacies made in Normandie !',
+            content: 'Normandie Pharma - Pharmacies made in Normandie !',
           },
         ]}
       ></Helmet>
