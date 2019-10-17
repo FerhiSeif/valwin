@@ -18,7 +18,7 @@
   flex-direction: column;
   height: 521px;
 }
-.ArticleListe-blocAricleReverse {
+.ArticleListe-blocArticleReverse {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -58,12 +58,12 @@
   font-family: 'Gotham Rounded';
 }
 @media only screen and (min-width: 752px) {
-  .ArticleListe-blocAricle {
+  .ArticleListe-blocArticle {
     display: flex;
     flex-direction: row;
   }
 
-  .ArticleListe-blocAricleReverse {
+  .ArticleListe-blocArticleReverse {
     display: flex;
     flex-direction: row;
   }

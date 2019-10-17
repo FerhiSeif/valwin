@@ -39,7 +39,9 @@ class ArticleList extends Component {
     return (
       <div
         className={
-          reverse ? 'ArticleListe-blocAricleReverse' : 'ArticleListe-blocAricle'
+          reverse
+            ? 'ArticleListe-blocArticleReverse'
+            : 'ArticleListe-blocArticle'
         }
       >
         {listElements}
