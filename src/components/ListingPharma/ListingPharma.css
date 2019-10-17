@@ -1,50 +1,63 @@
 .ListingPharma-container {
   display: grid;
-  grid-template-columns: 70px 215px 50px;
+  grid-template-columns: 1.5fr 5fr 1fr;
   max-width: 366.5px;
-  margin: 0px 20px;
-  padding: 10px;
-  font-family: 'Gotham Rounded';
+  margin: 0px var(--spacing);
+  padding: var(--spacing-small);
   line-height: var(--line-height);
-  border-bottom: solid 0.5px #b4b4b4;
+  border-bottom: solid 0.5px var(--color-grey-light-1);
 }
 
 .ListingPharma-picture {
   max-width: 50px;
   height: 50px;
-  vertical-align: bottom;
+  margin: auto var(--spacing-small) auto 0;
   border-radius: 50px;
 }
 
 .ListingPharma-information-title {
-  margin-top: 0px;
+  margin: 0px;
   color: var(--color-neutral-grey-1);
   font-weight: bold;
   font-size: var(--font-size-sm-2);
 }
 
 .ListingPharma-information-text {
+  margin-top: 0;
   color: var(--color-neutral-grey-1);
   font-size: var(--font-size-sm);
 }
 
 .ListingPharma-information-links {
   display: flex;
+  color: var(--color-brand-green);
+  font-size: var(--font-size-sm);
 }
 
 .ListingPharma-information-links-icons {
-  vertical-align: middle;
+  width: 15px;
+  height: 14px;
+  margin-right: var(--spacing-small);
 }
 
-.ListingPharma-information-links-phone a {
+.ListingPharma-information-links-caption {
   color: var(--color-brand-green);
-  font-size: var(--font-size-sm);
+}
+
+.ListingPharma-information-links-phone {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.ListingPharma-information-links-separator {
+  margin: 0 var(--spacing-small);
 }
 
 .ListingPharma-distance-information {
-  margin-top: 0px;
-  color: #b4b4b4;
-  font-size: 10px;
+  margin-top: 0;
+  color: var(--color-grey-light-1);
+  font-size: var(--font-size-xs);
   text-align: right;
 }
