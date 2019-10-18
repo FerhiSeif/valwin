@@ -4,7 +4,7 @@ import connecte from '../icons/connecte.svg';
 import proximite from '../icons/proximite.svg';
 import suiviPerso from '../icons/suivi-perso.svg';
 import expert from '../icons/expert.svg';
-import TextComponent from '../components/TextComponent';
+
 import './IconsList.css';
 
 class IconsList extends Component {
@@ -29,7 +29,7 @@ class IconsList extends Component {
                 alt="service icon"
               />
 
-              <TextComponent small={true}> {icon.text}</TextComponent>
+              <p className="IconsList-text"> {icon.text}</p>
             </div>
           );
         })}

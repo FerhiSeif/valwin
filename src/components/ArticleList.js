@@ -1,42 +1,58 @@
 import React, { Component } from 'react';
 import imageArticle from '../images/imageArticle.png';
-import TextComponent from './TextComponent';
 import './ArticleList.css';
 
 class ArticleList extends Component {
   state = {
-    articles: [
-      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
-      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
-      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
-      { img: imageArticle, text: 'Couches bébés : pas d’alerte à ce stade.' },
+    articleslist1: [
+      { img: imageArticle, text: 'Couches bébés 1: pas d’alerte à ce stade.' },
+      { img: imageArticle, text: 'Couches bébés 2: pas d’alerte à ce stade.' },
+    ],
+    articleslist2: [
+      { img: imageArticle, text: 'Couches bébés 3 : pas d’alerte à ce stade.' },
+      { img: imageArticle, text: 'Couches bébés 4: pas d’alerte à ce stade.' },
     ],
   };
+
+  _generateElemnts(listCards, reverse) {
+    var listElements = listCards.map((article, i) => (
+      <div
+        key={i}
+        className={`ArticleCard-container  ${
+          i % 2 === 0
+            ? 'ArticleCard-containerShort'
+            : 'ArticleCard-containerLong'
+        }`}
+      >
+        <img
+          src={article.img}
+          className={
+            i % 2 === 0 ? 'ArticleCard-imgShort' : 'ArticleCard-imgLong'
+          }
+          alt="Article"
+        />
+        <hr className="ArticleCard-hr" />
+        <p className="ArticleCard-text"> {article.text}</p>
+      </div>
+    ));
+
+    return (
+      <div
+        className={
+          reverse
+            ? 'ArticleListe-blocArticleReverse'
+            : 'ArticleListe-blocArticle'
+        }
+      >
+        {listElements}
+      </div>
+    );
+  }
   render() {
     return (
       <div className="ArticleListe-container">
-        {this.state.articles.map((article, i) => {
-          return (
-            <div
-              key={i}
-              className={`ArticleCard-container  ${
-                i % 2 == 0
-                  ? 'ArticleCard-containerShort'
-                  : 'ArticleCard-containerLong'
-              }`}
-            >
-              <img
-                src={article.img}
-                className={
-                  i % 2 == 0 ? 'ArticleCard-imgShort' : 'ArticleCard-imgLong'
-                }
-                alt="image Article"
-              />
-              <hr className="ArticleCard-hr" />
-              <TextComponent small={true}> {article.text}</TextComponent>
-            </div>
-          );
-        })}
+        {this._generateElemnts(this.state.articleslist1, true)}
+        {this._generateElemnts(this.state.articleslist2, false)}
       </div>
     );
   }

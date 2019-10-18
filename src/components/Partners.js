@@ -6,7 +6,7 @@ import gibaud from '../images/gibaud.png';
 import gifrer from '../images/gifrer.png';
 import './Partners.css';
 
-const partners = [bioderma, biogaran, gibaud, gifrer];
+const partners = [bioderma, biogaran, gibaud, gifrer, gibaud, gifrer];
 const survolcolor = ['green', 'greenlight', 'yellow', 'yellowlight'];
 
 //repeat table arr n times
@@ -23,7 +23,6 @@ class Partners extends Component {
     let newSurvolTab = makeRepeated(survolcolor, rest).concat(
       survolcolor.slice(0, mod)
     );
-    console.log('newSurvolTab ', newSurvolTab);
     return (
       <div className="Partners-container">
         {partners.map((partner, i) => (

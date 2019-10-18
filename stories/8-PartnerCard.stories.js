@@ -4,7 +4,7 @@ import '../src/App.css';
 import Partners from '../src/components/Partners';
 
 export default {
-  title: 'PartnersCard',
+  title: 'Partners Card',
 };
 
 export const partnerscard = () => <Partners />;

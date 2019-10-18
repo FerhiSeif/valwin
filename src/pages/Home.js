@@ -14,20 +14,22 @@ import './Home.css';
 const Home = () => (
   <Layout>
     <Helmet
-      title="Normadie Pharma - Accueil"
+      title="Normandie Pharma - Accueil"
       meta={[
         {
           name: 'description',
-          content: 'Normadie Pharma - Pharmacies made in Normandie !',
+          content: 'Normandie Pharma - Pharmacies made in Normandie !',
         },
       ]}
     ></Helmet>
-    <section className="Home-Introsection">
+    <section className="Home-Introduction">
       <ImgComponent />
       <SearchBar />
     </section>
     <section className="Home-Promosection">
-      <PromoCardList className="hei" />
+      <div className="Home-Promosection-Cardlist">
+        <PromoCardList />
+      </div>
       <div className="Home-Promosection-info">
         <TextComponent green={true}>
           {' '}
@@ -41,6 +43,7 @@ const Home = () => (
         </div>
         <Button medium={true}>Toutes les promotions</Button>
       </div>
+
       <div className="Home-Promosection-title">
         <TitleContainer green={true} C>
           {' '}
@@ -50,29 +53,36 @@ const Home = () => (
       </div>
     </section>
     <section className="Home-Articlesection">
-      <TextComponent large={true}>
+      <p className="Home-Articlesection-Title" large={true}>
         Nos derniers <span className="TextComponent-bold">articles</span>
-      </TextComponent>
+      </p>
       <ArticleList />
       <Button medium={true}>Tous les articles</Button>
     </section>
-    <section className="Home-Servicesection">
-      <div className="Servicesection-textContainer">
-        <TextComponent green={true}>
-          Nos <span className="TextComponent-bold">service</span>{' '}
-        </TextComponent>
-        <TextComponent small={true}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </TextComponent>
-      </div>
-      <IconsList />
-      <div className="Home-Servicesection-title">
-        <TitleContainer green={true} C>
-          {' '}
-          Tout ce dont j'ai besoin.
-        </TitleContainer>
-        <TitleContainer white={true}> au prix qui me va bien!</TitleContainer>
+    <section className="Home-Servicesection-container">
+      <div className="Home-Servicesection">
+        <div className="Servicesection-textContainer">
+          <TextComponent green={true}>
+            Nos <span className="TextComponent-bold">services</span>{' '}
+          </TextComponent>
+          <TextComponent small={true}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </TextComponent>
+        </div>
+        <div className="Home-ServicesectionIcont-cont">
+          <IconsList />
+        </div>
+        <div className="Home-Servicesection-title">
+          <TitleContainer textWhite={true}>
+            {' '}
+            Tout ce dont j'ai besoin.
+          </TitleContainer>
+          <TitleContainer white={true} className="fff">
+            {' '}
+            au prix qui me va bien!
+          </TitleContainer>
+        </div>
       </div>
     </section>
   </Layout>

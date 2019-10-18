@@ -17,13 +17,30 @@
   margin-bottom: 13px;
   margin-left: 13px;
 }
+.IconsList-text {
+  color: var(--color-neutral-grey);
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  font-family: 'Gotham Rounded';
+  text-align: left;
+}
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
+  .IconsList-text {
+    font-size: var(--font-size-sm-2);
+  }
+}
+@media only screen and (min-width: 1120px) {
+  .IconsList-text {
+    font-size: var(--font-size-med);
+  }
+
   .IconsList-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    padding-left: 60px;
   }
   .IconsList-img {
     width: 50px;

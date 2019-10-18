@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
@@ -7,7 +8,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
-import './DropDown.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,30 +34,32 @@ export default function MenuListComposition() {
 
     setOpen(false);
   };
+  console.log('open : ', open);
   return (
     <div className={classes.root}>
-      <div className="DropDown-container">
-        <div
+      <div style={{ height: '88px', width: '30px' }}>
+        <Button
           ref={anchorRef}
           aria-controls="menu-list-grow"
           aria-haspopup="true"
           onClick={handleToggle}
-          className="DropDown-MenuList-Container"
         >
           {open === false ? (
             <img
-              className="DropDown-OpenMenueBtn"
-              src={require('../icons/menu.svg')}
-              alt="Open-Menue-List"
+              src={require('../images/openNav.png')}
+              style={{ background: 'green' }}
+              width="64px"
+              alt="Ouvrir"
             />
           ) : (
             <img
-              className="DropDown-ExitMenueBtn"
-              src={require('../icons/Exitmenu.svg')}
-              alt="Exit-Menue-List"
+              src={require('../images/closeNav.png')}
+              style={{ background: 'green' }}
+              width="64px"
+              alt="Fermer"
             />
           )}
-        </div>
+        </Button>
 
         <Popper
           open={open}
@@ -65,7 +67,7 @@ export default function MenuListComposition() {
           keepMounted
           transition
           disablePortal
-          className="DropDown-MenurList"
+          style={{ width: '100%' }}
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -77,7 +79,7 @@ export default function MenuListComposition() {
             >
               <Paper id="menu-list-grow">
                 <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList>
+                  <MenuList style={{ background: 'green', width: '100%' }}>
                     <MenuItem onClick={handleClose}>
                       <Link className="Header-menu-item" to="/">
                         Accueil

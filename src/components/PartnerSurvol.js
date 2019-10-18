@@ -2,7 +2,7 @@ import React from 'react';
 import pluscirclewhite from '../icons/pluscirclewhite.svg';
 import pluscircleyellow from '../icons/pluscircleyellow.svg';
 import pluscirclegreen from '../icons/pluscirclegreen.svg';
-import pluscirclegrey from '../icons/pluscirclegrey.svg';
+
 import './PartnerSurvol.css';
 
 const PartnerSurvol = ({ color }) => {
@@ -14,7 +14,7 @@ const PartnerSurvol = ({ color }) => {
       <img
         src={
           color === 'green'
-            ? pluscirclegrey
+            ? pluscirclewhite
             : color === 'greenlight'
             ? pluscirclegreen
             : color === 'yellow'

@@ -1,10 +1,19 @@
 .PromoCardList-container {
   display: flex;
   flex-wrap: wrap;
+  width: 369px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
   .PromoCardList-container {
-    width: 565px;
+    width: 508px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .PromoCardList-container {
+    align-self: flex-end;
+    width: 507px;
+    height: AUTO;
   }
 }
