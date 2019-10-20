@@ -78,6 +78,32 @@
   .ValuesCard-container {
     margin-right: 12px;
   } */
+  .ValuesCard-img {
+    width: 62px;
+    height: 34px;
+  }
+  .ValuesCardList-container {
+    width: 754px;
+  }
+
+  .ValuesCard-container {
+    width: 219.24px;
+    margin-right: 16px;
+  }
+  .ValuesCard-containerShort {
+    height: 193px;
+  }
+
+  .ValuesCard-containerLong {
+    height: 243px;
+  }
+  .ValuesCard-text {
+    width: 200px;
+    font-size: var(--font-size-med);
+  }
+  .ValuesCard-hr {
+    width: 52px;
+  }
 }
 @media only screen and (min-width: 960px) {
   .ValuesCardList-container {

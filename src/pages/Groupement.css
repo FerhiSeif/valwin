@@ -43,6 +43,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 471px;
+  padding-top: 24px;
 }
 .Valuessection-valuesimage {
   display: none;
@@ -53,7 +55,20 @@
   align-items: center;
   width: 281px;
 }
-
+.Valuesection-titleValue-Contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 271px;
+  background: #f6f6f6;
+}
+.Groupement-Servicesection-title {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 448px) {
 }
 
@@ -70,6 +85,12 @@
   }
   .Groupement-Virtuessection {
     margin-top: 20px;
+  }
+  .Valuesection-titleValue-Contain {
+    height: 547px;
+  }
+  .Groupement-Valuessection {
+    height: 808px;
   }
 }
 
@@ -117,8 +138,7 @@
     margin-top: 77px;
   }
   .Groupement-Valuessection {
-    height: 632px;
-    background: #f6f6f6;
+    height: 808px;
   }
   .Home-Servicesection-title {
     position: absolute;

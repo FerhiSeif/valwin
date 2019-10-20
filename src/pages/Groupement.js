@@ -4,11 +4,13 @@ import Layout from './Layout';
 import logo from '../icons/logo.svg';
 import pharmadep from '../images/local.png';
 import imageValeur from '../images/imageValeur.png';
+import introImg from '../images/groupementIntroImg.png';
 import ImgComponent from '../components/ImgComponent';
 import ValuesCardList from '../components/ValuesCardList';
 import VirtuesCardList from '../components/VirtuesCardList';
 import TitleContainer from '../components/TitleContainer';
 import TextComponent from '../components/TextComponent';
+
 import './Groupement.css';
 
 const Groupement = () => (
@@ -23,7 +25,13 @@ const Groupement = () => (
       ]}
     ></Helmet>
     <section className="Groupement-Introduction">
-      <ImgComponent />
+      <ImgComponent
+        urlImg={introImg}
+        text1="Normandie Pharma"
+        text2="une aventure qui repose"
+        text3="sur la cohésion de notre collectif"
+        text4="à taille humaine."
+      />
     </section>
     <section className="Groupement-definition">
       <div className="Groupement-defSection-text">
@@ -68,18 +76,20 @@ const Groupement = () => (
       </div>
     </section>
     <section className="Groupement-Valuessection">
-      <p className="assembledsection-Title">
-        Nos <span className="TextComponent-bold">valeurs</span>
-      </p>
-      <div className="Valuessection-valuesimage-Conatiner">
-        <img
-          src={imageValeur}
-          className="Valuessection-valuesimage"
-          alt="smile image"
-        />
-        <ValuesCardList />
+      <div className="Valuesection-titleValue-Contain">
+        <p className="assembledsection-Title">
+          Nos <span className="TextComponent-bold">valeurs</span>
+        </p>
+        <div className="Valuessection-valuesimage-Conatiner">
+          <img
+            src={imageValeur}
+            className="Valuessection-valuesimage"
+            alt="smile image"
+          />
+          <ValuesCardList />
+        </div>
       </div>
-      <div className="Home-Servicesection-title">
+      <div className="Groupement-Servicesection-title">
         <TitleContainer textWhite={true}>
           {' '}
           Tout ce dont j'ai besoin.
