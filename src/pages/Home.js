@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import SearchBar from '../components/SearchBar';
 import Layout from './Layout';
-import ImgComponent from '../components/ImgComponent';
+import IntroCarousel from '../components/IntroCarousel';
 import PromoCardList from '../components/PromoCardList';
 import TitleContainer from '../components/TitleContainer';
 import Button from '../components/Button';
@@ -23,7 +23,7 @@ const Home = () => (
       ]}
     ></Helmet>
     <section className="Home-Introduction">
-      <ImgComponent />
+      <IntroCarousel />
       <SearchBar />
     </section>
     <section className="Home-Promosection">

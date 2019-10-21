@@ -23,6 +23,7 @@
 }
 .Header-link-container {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   margin-right: 17px;
@@ -75,6 +76,7 @@
     font-size: var(--font-size-sm-2);
   }
   .Header-link-container {
+    flex: 1;
     margin-right: 10px;
     margin-left: 0;
   }
@@ -108,7 +110,7 @@
     margin-right: 10px;
     font-weight: bold;
     font-weight: bold;
-    font-size: var(--font-size-sm-2);
+    font-size: var(--font-size-xs);
   }
   .Header-top-link {
     justify-content: space-between;
@@ -158,6 +160,6 @@
   }
   .HeaderLink {
     font-weight: bold;
-    font-size: 10px;
+    font-size: var(--font-size-xxs);
   }
 }

@@ -3,25 +3,36 @@ ul.MuiList-root.MuiList-padding {
   top: 12px;
   left: -5px;
   width: 100%;
-  background: green;
+  background: var(--color-brand-green);
 }
-
+li.MuiButtonBase-root {
+  margin-left: 33px;
+}
+.MuiListItem-button:active {
+  color: var(--color-brand-green);
+  font-weight: bold;
+  transition: step-end;
+}
 .DropDown-container {
   width: 42px;
   height: 13px;
 }
 .DropDown-MenuList-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+  background: var(--color-brand-green);
 }
 .DropDown-OpenMenueBtn {
-  width: 43px;
+  width: 27px;
   height: 43px;
   background: var(--color-brand-green);
 }
 
 .DropDown-ExitMenueBtn {
-  width: 43px;
+  width: 27px;
   height: 43fpx;
   background: var(--color-brand-green);
 }
