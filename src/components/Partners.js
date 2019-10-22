@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import PartnerSurvol from './PartnerSurvol';
+import Button from './Button';
 import bioderma from '../images/bioderma.png';
 import biogaran from '../images/biogaran.png';
 import gibaud from '../images/gibaud.png';
 import gifrer from '../images/gifrer.png';
 import './Partners.css';
 
-const partners = [bioderma, biogaran, gibaud, gifrer, gibaud, gifrer];
+const partners = [
+  bioderma,
+  biogaran,
+  gibaud,
+  gifrer,
+  gibaud,
+  gifrer,
+  bioderma,
+  biogaran,
+  gibaud,
+  gifrer,
+  gibaud,
+  gifrer,
+];
 const survolcolor = ['green', 'greenlight', 'yellow', 'yellowlight'];
 
 //repeat table arr n times
@@ -31,6 +45,9 @@ class Partners extends Component {
             <img className="Partners-logo" src={partner} alt="Partner logo" />
           </div>
         ))}
+        <div className="Home-ButtonContainer">
+          <Button medium={true}>En voir plus</Button>
+        </div>
       </div>
     );
   }

@@ -8,7 +8,7 @@ import './PartnerSurvol.css';
 const PartnerSurvol = ({ color }) => {
   return (
     <div className={`Partners-hoverdiv Partners-hoverdiv${color}`}>
-      <hr className={`Partners-hr${color}`} />
+      <hr className={`Partners-hr Partners-hr${color}`} />
       <p className={`Partners-title`}>BAYER</p>
       <p className={`Partners-text`}>Voir les gammes</p>
       <img

@@ -57,8 +57,9 @@ const Home = () => (
         Nos derniers <span className="TextComponent-bold">articles</span>
       </p>
       <ArticleList />
-      <div className="Home-ButtonContainer"></div>
-      <Button medium={true}>Tous les articles</Button>
+      <div className="Home-ButtonContainer">
+        <Button medium={true}>Tous les articles</Button>
+      </div>
     </section>
     <section className="Home-Servicesection-container">
       <div className="Home-Servicesection">
