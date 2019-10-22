@@ -55,20 +55,31 @@
 }
 
 @media only screen and (min-width: 960px) {
+  .ImgContainer {
+    height: 100%;
+  }
   .ImgComponent-text {
     position: absolute;
-    top: 30%;
+    top: 31%;
     display: block;
     display: flex;
     flex-direction: column;
   }
+  .ImgComponent-container {
+    position: relative;
+    height: 438px;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
-  .ImgContainer {
-    height: 488px;
+  .ImgComponent-container {
+    position: relative;
+    height: 438px;
   }
   .ImgComponent-text {
-    top: 39%;
+    top: 31%;
+  }
+  .ImgContainer {
+    height: 100%;
   }
 }

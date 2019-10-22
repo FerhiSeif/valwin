@@ -7,13 +7,15 @@
   left: 0;
   z-index: 43;
   display: flex;
-  width: 329px;
+  width: 350px;
   height: 42px;
   margin: auto;
   margin-top: 10px;
   background: var(--color-neutral-white);
-  box-shadow: -1px -1px 10px var(--color-grey-light);
+  border-radius: 2px;
+  box-shadow: 0px 4px 11px -6px var(--color-neutral-grey-2);
 }
+
 .SearchBar {
   display: flex;
   flex-direction: column;
@@ -21,12 +23,15 @@
   height: 24px;
   padding: 9px;
   background: var(--color-neutral-white);
+  border-radius: 2px;
 }
 
 .SearchBar-text {
   color: var(--color-brand-green);
-  font-size: var(--font-size-sm-2);
+  font-weight: bold;
+  font-size: var(--font-size-sm);
   font-family: 'Gotham Rounded';
+  text-shadow: 0px 0px 1px;
 }
 .SearchBar-Input {
   border: none;
@@ -41,18 +46,19 @@
   align-items: center;
   justify-content: center;
   width: 95px;
-  background: #ecda38af;
+  background: #ecda38;
   border: none;
+  border-radius: 2px;
   outline: none;
 }
 .SearchBar-group-Button:hover {
-  background: var(--color-brand-yellow);
+  background: #e4c000;
 }
 
 ::placeholder {
   color: var(--color-neutral-grey-2);
   font-size: var(--font-size-med);
-  font-family: 'Gotham Rounded';
+  font-family: Arial;
   opacity: 1; /* Firefox */
 }
 
@@ -60,24 +66,28 @@
   /* Internet Explorer 10-11 */
   color: var(--color-neutral-grey-2);
   font-size: var(--font-size-med);
-  font-family: 'Gotham Rounded';
+  font-family: Arial;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--color-neutral-grey-2);
   font-size: var(--font-size-med);
-  font-family: 'Gotham Rounded';
+  font-family: Arial;
 }
 @media only screen and (min-width: 448px) {
   .SearchBar-container {
-    top: 87%;
+    top: 81%;
+    border-radius: 2px;
+    box-shadow: 0px 4px 11px -6px var(--color-neutral-grey-2);
   }
 }
 
 @media only screen and (min-width: 752px) {
   .SearchBar-container {
-    top: 90%;
+    top: 86%;
+    border-radius: 2px;
+    box-shadow: 0px 4px 11px -6px var(--color-neutral-grey-2);
   }
 }
 
@@ -88,6 +98,8 @@
     z-index: 43;
     width: 820px;
     height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 11px -6px var(--color-neutral-grey-2);
   }
   .SearchBar-group-Button {
     width: 52px;
@@ -97,5 +109,7 @@
 @media only screen and (min-width: 1120px) {
   .SearchBar-container {
     top: 93%;
+    border-radius: 2px;
+    box-shadow: 0px 4px 11px -6px var(--color-neutral-grey-2);
   }
 }

@@ -11,6 +11,7 @@
 .TextH1--green {
   color: var(--color-brand-green);
   font-size: var(--font-size-med-1);
+  /* margin-bottom: -15px; */
 }
 
 .TextH3--small {
@@ -31,6 +32,7 @@
 
 .TextComponent-bold {
   font-weight: bold;
+  text-shadow: 0px 0px 1px;
 }
 
 @media only screen and (min-width: 723px) {
@@ -51,17 +53,17 @@
   }
 
   .TextH3--small {
-    font-size: var(--font-size-med-1);
+    font-size: var(--font-size-med);
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 1120px) {
   .TextH1--green {
-    font-size: var(--font-size-large-1);
+    font-size: var(--font-size-large);
   }
   .TextH3--small {
-    font-size: var(--font-size-med-2);
+    font-size: var(--font-size-med);
   }
 
   .TextH2--large {

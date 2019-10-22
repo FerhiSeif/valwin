@@ -8,16 +8,24 @@ const ImgComponent = ({ urlImg, text1, text2, text3, text4 }) => (
     <img src={urlImg} className="ImgContainer" />
     <div className="ImgComponent-text">
       <div>
-        <TitleContainer green={true}>{text1}</TitleContainer>
+        <TitleContainer green={true} gras={true}>
+          {text1}
+        </TitleContainer>
       </div>
       <div>
-        <TitleContainer white={true}>{text2}</TitleContainer>
+        <TitleContainer white={true} gras={true}>
+          {text2}
+        </TitleContainer>
       </div>
       <div>
-        <TitleContainer white={true}>{text3}</TitleContainer>
+        <TitleContainer white={true} gras={true}>
+          {text3}
+        </TitleContainer>
       </div>
       <div>
-        <TitleContainer white={true}>{text4} </TitleContainer>
+        <TitleContainer white={true} gras={true}>
+          {text4}{' '}
+        </TitleContainer>
       </div>
     </div>
     {/* <div className="Img-Smile-Container"></div>*/}

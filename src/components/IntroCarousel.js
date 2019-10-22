@@ -9,10 +9,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import './IntroCarousel.css';
 
 const Imgs = [imageValeur, introImg, introImg];
-const text1 = 'Normandie Pharma';
-const text2 = 'une aventure qui repose';
-const text3 = 'sur la cohésion de notre collectif';
-const text4 = 'à taille humaine.';
+const text1 = 'Suivi personnalisé';
+const text2 = 'Quelqu’un qui me connaît,';
+const text3 = 'forcément mieux mes';
+const text4 = 'besoins ! ';
 
 const Image = ({ url }) => (
   <img className="ImageCrousel-container " src={url} />
@@ -47,18 +47,26 @@ class IntroCarousel extends React.Component {
             </div>
           ))}
         </Slider>
-        <div className="ImgComponent-text">
+        <div className="SliderImgComponent-text">
           <div>
-            <TitleContainer green={true}>{text1}</TitleContainer>
+            <TitleContainer green={true} gras={true}>
+              {text1}{' '}
+            </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true}>{text2}</TitleContainer>
+            <TitleContainer white={true} gras={true}>
+              {text2}
+            </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true}>{text3}</TitleContainer>
+            <TitleContainer white={true} gras={true}>
+              {text3}
+            </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true}>{text4} </TitleContainer>
+            <TitleContainer white={true} gras={true}>
+              {text4}{' '}
+            </TitleContainer>
           </div>
         </div>
       </div>

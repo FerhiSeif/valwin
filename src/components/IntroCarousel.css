@@ -66,6 +66,9 @@ ul.slick-dots {
   border: 1px solid var(--color-brand-yellow);
   border-radius: 223px;
 }
+.SliderImgComponent-text {
+  display: NONE;
+}
 
 @media only screen and (min-width: 448px) {
   .slick-dots {
@@ -105,10 +108,29 @@ ul.slick-dots {
 
 @media only screen and (min-width: 960px) {
   .ImageCrousel-container {
-    height: 443px;
+    height: 438px;
   }
   .slick-dots {
     top: 168px;
     right: 20px;
+  }
+  .slick-slider {
+    height: 438px;
+  }
+  .SliderImgComponent-text {
+    position: absolute;
+    top: 30%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .SliderImgComponent-text {
+    top: 30%;
+  }
+  .slick-slider {
+    height: 438px;
   }
 }

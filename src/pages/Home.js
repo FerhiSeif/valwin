@@ -45,11 +45,11 @@ const Home = () => (
       </div>
 
       <div className="Home-Promosection-title">
-        <TitleContainer green={true} C>
+        <TitleContainer green={true}> Tout ce dont j'ai besoin,</TitleContainer>
+        <TitleContainer white={true} gras={true}>
           {' '}
-          Tout ce dont j'ai besoin.
+          au prix qui me va bien !{' '}
         </TitleContainer>
-        <TitleContainer white={true}> au prix qui me va bien!</TitleContainer>
       </div>
     </section>
     <section className="Home-Articlesection">
@@ -57,6 +57,7 @@ const Home = () => (
         Nos derniers <span className="TextComponent-bold">articles</span>
       </p>
       <ArticleList />
+      <div className="Home-ButtonContainer"></div>
       <Button medium={true}>Tous les articles</Button>
     </section>
     <section className="Home-Servicesection-container">
@@ -78,7 +79,7 @@ const Home = () => (
             {' '}
             Tout ce dont j'ai besoin.
           </TitleContainer>
-          <TitleContainer white={true} className="fff">
+          <TitleContainer white={true} gras={true}>
             {' '}
             au prix qui me va bien!
           </TitleContainer>

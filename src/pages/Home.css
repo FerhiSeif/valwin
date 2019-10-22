@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   height: 602px;
-  padding-top: 60px;
+  padding-top: 40px;
   background: rgba(242, 242, 242, 0.7);
 }
 .Promosection-textContainer {
@@ -48,8 +48,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 573px;
-  padding-top: 84px;
+  height: 708px;
+  padding-top: 64px;
 }
 .Home-Articlesection-Title {
   color: var(--color-neutral-grey-2);
@@ -59,7 +59,8 @@
 .Home-Servicesection-container {
   display: flex;
   justify-content: center;
-  height: 464px;
+  height: 414px;
+  background: rgba(242, 242, 242, 0.7);
 }
 .Home-Servicesection {
   display: flex;
@@ -68,7 +69,7 @@
   justify-content: space-between;
   width: 329px;
   height: 410px;
-  padding-top: 68px;
+  padding-top: 20px;
 }
 .Servicesection-textContainer {
   display: flex;
@@ -76,7 +77,7 @@
   align-items: center;
   justify-content: inherit;
   width: 225px;
-  height: 102px;
+  height: 127px;
 }
 .Home-Servicesection-title {
   display: flex;
@@ -94,7 +95,6 @@
 @media only screen and (min-width: 448px) {
   .Home-Promosection-Cardlist {
     width: 369px;
-    padding-left: 35px;
   }
 
   .Home-Promosection-title {
@@ -104,7 +104,7 @@
   }
 
   .Home-Promosection {
-    height: 653px;
+    height: 602px;
   }
 }
 
@@ -137,7 +137,7 @@
   .Home-Promosection-info {
     flex: 1;
     align-items: flex-start;
-    padding: 77px;
+    padding-left: 40px;
   }
   .Home-Promosection-title {
     position: absolute;
@@ -151,7 +151,7 @@
     align-items: baseline;
     width: 100%;
     height: 313px;
-    padding: 72px 20px;
+    padding: 35px 20px;
   }
   .Servicesection-textContainer {
     flex: 1;
@@ -167,7 +167,7 @@
   .Home-Servicesection-title {
     position: absolute;
     right: 36%;
-    bottom: 113px;
+    bottom: 59px;
   }
   .Promosection-textContainer {
     height: 94px;
@@ -179,8 +179,11 @@
 
 @media only screen and (min-width: 752px) {
   .Home-Articlesection {
-    height: 396px;
+    height: 417px;
     padding-top: 76px;
+  }
+  .Home-ButtonContainer {
+    margin-top: 37px;
   }
 }
 
@@ -205,7 +208,7 @@
   .Home-Servicesection-title {
     position: absolute;
     right: 36%;
-    bottom: 126px;
+    bottom: 25px;
   }
 
   .Promosection-textContainer {
@@ -217,7 +220,7 @@
   }
 
   .Home-Servicesection {
-    padding: 72px 68px;
+    padding: 22px 68px;
   }
   .Home-Promosection-info {
     height: 362px;
@@ -225,14 +228,9 @@
 }
 
 @media only screen and (min-width: 1120px) {
-  .Home-Promosection-Cardlist {
-    /* width: 57%; */
-    display: flex;
-    flex: 1;
-    padding-top: 115px;
-  }
-
   .Home-Promosection {
+    display: flex;
+    justify-content: space-evenly;
     height: 448px;
     padding-left: 77px;
   }
@@ -244,7 +242,8 @@
   }
   .Home-Promosection-Cardlist {
     display: flex;
-    justify-content: center;
+    flex: 1;
+    justify-content: flex-end;
     width: 50%;
     height: 100%;
     margin: 0 auto;
@@ -258,6 +257,7 @@
     flex: 1;
     height: 326px;
     padding-top: 0px;
+    padding-left: 116px;
   }
   .Home-Servicesection {
     padding-top: 94px;
@@ -265,12 +265,9 @@
     padding-left: 98px;
   }
   .Home-Servicesection-container {
-    height: 366px;
+    height: 313px;
   }
-}
-
-@media only screen and (min-width: 1580px) {
-  /* .Home-Servicesection-container{
-   padding:0 146px
-  } */
+  .Home-ButtonContainer {
+    margin-top: 100px;
+  }
 }

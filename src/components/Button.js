@@ -22,7 +22,7 @@ const Button = ({
     })}
     onClick={onClick}
   >
-    {children}
+    <span className="TextButton"> {children} </span>
   </button>
 );
 
