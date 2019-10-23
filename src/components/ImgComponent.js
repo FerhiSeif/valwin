@@ -22,11 +22,15 @@ const ImgComponent = ({ urlImg, text1, text2, text3, text4 }) => (
           {text3}
         </TitleContainer>
       </div>
-      <div>
-        <TitleContainer white={true} gras={true}>
-          {text4}{' '}
-        </TitleContainer>
-      </div>
+      {text4 ? (
+        false
+      ) : (
+        <div>
+          <TitleContainer white={true} gras={true}>
+            {text4}{' '}
+          </TitleContainer>
+        </div>
+      )}
     </div>
     {/* <div className="Img-Smile-Container"></div>*/}
   </div>

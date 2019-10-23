@@ -1,0 +1,47 @@
+.ArticleCardComponent-text {
+  padding-left: 11px;
+  color: var(--color-neutral-grey-2);
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  font-family: 'Gotham Rounded';
+}
+.ArticleCardComponent {
+  width: 160px;
+  height: 210px;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 1px;
+  background: var(--color-neutral-white);
+  border: 1px solid var(--color-grey-light);
+  box-shadow: 3px 3px 6px -5px var(--color-neutral-grey-2);
+}
+.ArticleCardComponent-Img {
+  width: 158px;
+  height: 164px;
+}
+.ArticleCardComponent-hr {
+  width: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  border: 1px solid var(--color-brand-yellow);
+}
+
+@media only screen and (min-width: 752px) {
+  .ArticleCardComponent-text {
+    padding-left: 11px;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+  }
+  .ArticleCardComponent {
+    width: 236px;
+    height: 312px;
+  }
+  .ArticleCardComponent-Img {
+    width: 235px;
+    height: 209px;
+  }
+  .ArticleCardComponent-hr {
+    width: 53px;
+  }
+}

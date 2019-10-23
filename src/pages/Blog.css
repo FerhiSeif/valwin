@@ -1,0 +1,48 @@
+.Blog-ArticleListe-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  background: var(--color-grey-light);
+}
+.Blog-ArticleCard-List {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+}
+.Blog-NewArticleCard {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 752px) {
+  .Blog-NewArticleCard {
+    display: flex;
+  }
+  .Blog-NewArticleCard {
+    position: relative;
+    justify-content: flex-end;
+    width: 812px;
+  }
+
+  .NewArticleCard-container {
+    position: absolute;
+    top: -85px;
+    left: 43px;
+  }
+
+  .Blog-ArticleCard-List {
+    width: 522px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .Blog-NewArticleCard {
+    width: 983px;
+  }
+  .Blog-ArticleCard-List {
+    width: 735px;
+  }
+  .NewArticleCard-container {
+    top: -85px;
+    left: 1px;
+  }
+}

@@ -25,7 +25,6 @@
 .ArticleCard-containerShort {
   width: 160px;
   height: 210px;
-  background-color: 'red';
 }
 
 .ArticleCard-containerLong {
@@ -54,7 +53,7 @@
   padding-left: 11px;
   color: var(--color-neutral-grey-2);
   font-weight: 600;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-family: 'Gotham Rounded';
 }
 @media only screen and (min-width: 752px) {
@@ -108,7 +107,7 @@
   .ArticleCard-text {
     padding-left: 11px;
     font-weight: 600;
-    font-size: var(--font-size-med);
+    font-size: var(--font-size-sm);
   }
   .ArticleCard-container {
     margin-right: 12px;

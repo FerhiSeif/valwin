@@ -1,0 +1,100 @@
+.NewArticleCard-container {
+  display: flex;
+  width: 326px;
+  height: 197px;
+  margin-bottom: 13px;
+  padding: 1px;
+  background: var(--color-neutral-white);
+  border: 1px solid var(--color-grey-light);
+  box-shadow: 3px 3px 6px -5px var(--color-neutral-grey-2);
+}
+
+.NewArticleCard-title {
+  color: var(--color-neutral-grey-2);
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-xs);
+  font-family: 'Gotham Rounded';
+  line-height: 140.62%;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.NewArticleCard-text {
+  display: none;
+}
+
+.NewArticleCard-textRes {
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-xxs);
+  font-family: 'Gotham Rounded';
+  line-height: 140.62%;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.NewArticleCard-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 153px;
+  margin-left: 6px;
+}
+
+.newArticlelogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 11px;
+  color: var(--color-neutral-white);
+  font-size: 8px;
+  background: var(--color-brand-yellow);
+}
+
+.NewArticleCard-img {
+  width: 160px;
+  height: 198px;
+}
+
+@media only screen and (min-width: 752px) {
+  .NewArticleCard-container {
+    flex-direction: column;
+    justify-content: left;
+    width: 235px;
+    height: 733px;
+  }
+  .NewArticleCard-img {
+    width: 235px;
+    height: 291px;
+  }
+  .NewArticleCard-info {
+    position: relative;
+    width: 93%;
+  }
+
+  .NewArticleCard-title {
+    font-size: var(--font-size-sm);
+    text-align: left;
+  }
+
+  .NewArticleCard-text {
+    display: block;
+    color: var(--color-neutral-grey-2);
+    font-size: var(--font-size-sm);
+    font-family: 'Gotham Rounded';
+    line-height: 140.62%;
+    letter-spacing: 0.08em;
+    text-align: left;
+  }
+  .newArticlelogo {
+    position: absolute;
+    top: -17px;
+    width: 68px;
+    height: 15px;
+  }
+  .NewArticle-Button {
+    margin-top: 30px;
+  }
+  .NewArticleCard-textRes {
+    display: none;
+  }
+}

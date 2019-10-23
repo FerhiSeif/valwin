@@ -25,7 +25,6 @@ const Partenaires = () => {
           text1="Choix et qualité"
           text2="De super partenaires"
           text3=" pour des services de qualité ! "
-          text4=""
         />
       </section>
       <section className="Partenaires-PartnrsList-Container">

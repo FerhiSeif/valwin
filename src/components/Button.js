@@ -11,6 +11,7 @@ const Button = ({
   filtre,
   medium,
   geolocalisation,
+  small,
 }) => (
   <button
     className={clsx('Button', {
@@ -19,6 +20,7 @@ const Button = ({
       'Button--green': green,
       'Button--filtre': filtre,
       'Button--geolocalisation': geolocalisation,
+      'Button--small': small,
     })}
     onClick={onClick}
   >
@@ -34,6 +36,7 @@ Button.propTypes = {
   filtre: PropTypes.bool,
   medium: PropTypes.bool,
   geolocalisation: PropTypes.bool,
+  small: PropTypes.bool,
 };
 
 export default Button;
