@@ -52,11 +52,11 @@
   transition: all 250ms ease;
 }
 .Button--filtre {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  width: 200px;
-  font-size: var(--font-size-med-2);
+  width: 128px;
+  height: 25px;
+  padding: 0;
+  font-size: var(--font-size-xs);
+  background: transparent;
 }
 
 .Button--filtre:hover {
@@ -91,31 +91,45 @@
   margin-left: 8px;
 }
 
+.icon-filterbtndark {
+  display: block;
+}
+
 .Button--filtre:hover .icon-filterbtndark {
   display: none;
+}
+.Button--filtre:hover .icon-filterbtngreen {
+  display: block;
 }
 
 .icon-filterbtngreen {
   display: none;
 }
 
-.Button--filtre:hover .icon-filterbtngreen {
-  display: block;
-}
-
-/* .optionfilter{
-  display: none
-} */
-
 .Button--filtre:active .optionfilter {
   display: block;
 }
 @media only screen and (min-width: 752px) {
+  .Button--geolocalisation:hover {
+    color: var(--color-neutral-white);
+    background-color: var(--color-neutral-grey);
+  }
   .Button--small {
     width: 169px;
     height: 40px;
     padding: 0;
     font-size: var(--font-size-med-1);
+  }
+
+  .Button--filtre {
+    width: 225px;
+    height: 40px;
+    font-weight: bold;
+    font-size: var(--font-size-sm-2);
+  }
+
+  .icon-filterUpbtndark {
+    margin-left: 6px;
   }
 }
 
@@ -126,6 +140,7 @@
     padding: 0;
   }
   .TextButton {
+    display: flex;
     font-size: var(--font-size-sm-2);
   }
   .Button--small {

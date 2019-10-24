@@ -6,7 +6,7 @@ import imageArticle from '../images/imageArticle.png';
 import Layout from './Layout';
 import NewArticle from '../components/NewArticle';
 import ArticleCard from '../components/ArticleCard';
-import Button from '../components/Button';
+import FilterButton from '../components/FilterButton';
 
 import './Blog.css';
 
@@ -44,7 +44,7 @@ const Partenaires = () => {
           <p className="PartnrsList-Container-Title">
             Nos <span className="TextComponent-bold">valeurs</span>
           </p>
-          <Button filter={true}>FILTRER PAR</Button>
+          <FilterButton />
 
           <div className="Blog-NewArticleCard">
             <NewArticle />

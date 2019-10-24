@@ -1,0 +1,89 @@
+.FilterButton-dropdownCont {
+  position: relative;
+  z-index: 2234;
+  width: 128px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background: var(--color-neutral-white);
+  border: 1px solid black;
+}
+.TextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 177px;
+  font-weight: bold;
+  font-size: var(--font-size-xs);
+  border: none;
+}
+
+.FilterButton-dropdown {
+  position: absolute;
+  width: 117px;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  background: var(--color-neutral-white);
+  border: 1px solid black;
+  border-top: none;
+}
+
+.FilterButton-menuItem {
+  display: flex;
+  align-items: center;
+  width: 128px;
+  margin-bottom: 5px;
+}
+.FilterBtn-menuItem-text {
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-xs);
+  font-family: 'Gotham Rounded';
+}
+
+.icon-filterContainer {
+  position: relative;
+  margin-left: 6px;
+}
+
+.FilterBtn-menuItem-icon {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  padding: 0;
+  background: var(--color-neutral-white);
+  border: 1px solid var(--color-brand-yellow);
+  border-radius: 223px;
+}
+.FilterButton-menuItem:hover .FilterBtn-menuItem-text {
+  color: var(--color-neutral-grey-1);
+  font-weight: bold;
+}
+
+.FilterButton-menuItem:hover .FilterBtn-menuItem-icon {
+  background: var(--color-brand-yellow);
+}
+
+@media only screen and (min-width: 752px) {
+  .FilterButton-dropdownCont {
+    width: 225px;
+  }
+  .FilterButton-dropdown {
+    width: 214px;
+    height: 102px;
+    padding-top: 25px;
+    padding-bottom: 44px;
+  }
+  .FilterBtn-menuItem-text {
+    font-weight: normal;
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    letter-spacing: 0.08em;
+  }
+  .FilterButton-menuItem {
+    width: 225px;
+    margin-bottom: 7px;
+  }
+  .TextButton {
+    font-size: var(--font-size-sm-2);
+  }
+}
