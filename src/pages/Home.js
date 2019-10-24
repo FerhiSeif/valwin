@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import Layout from './Layout';
 import IntroCarousel from '../components/IntroCarousel';
@@ -41,12 +42,15 @@ const Home = () => (
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </TextComponent>
         </div>
-        <Button medium={true}>Toutes les promotions</Button>
+        <Link to="/nos-promotions">
+          {' '}
+          <Button medium={true}>Toutes les promotions</Button>
+        </Link>
       </div>
 
       <div className="Home-Promosection-title">
         <TitleContainer green={true}> Tout ce dont j'ai besoin,</TitleContainer>
-        <TitleContainer white={true} gras={true}>
+        <TitleContainer white={true} bold={true}>
           {' '}
           au prix qui me va bien !{' '}
         </TitleContainer>
@@ -58,7 +62,9 @@ const Home = () => (
       </p>
       <ArticleList />
       <div className="Home-ButtonContainer">
-        <Button medium={true}>Tous les articles</Button>
+        <Link to="/notre-blog">
+          <Button medium={true}>Tous les articles</Button>
+        </Link>
       </div>
     </section>
     <section className="Home-Servicesection-container">
@@ -80,7 +86,7 @@ const Home = () => (
             {' '}
             Tout ce dont j'ai besoin.
           </TitleContainer>
-          <TitleContainer white={true} gras={true}>
+          <TitleContainer white={true} bold={true}>
             {' '}
             au prix qui me va bien!
           </TitleContainer>

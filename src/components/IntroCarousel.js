@@ -49,22 +49,22 @@ class IntroCarousel extends React.Component {
         </Slider>
         <div className="SliderImgComponent-text">
           <div>
-            <TitleContainer green={true} gras={true}>
+            <TitleContainer green={true} bold={true}>
               {text1}{' '}
             </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true} gras={true}>
+            <TitleContainer white={true} bold={true}>
               {text2}
             </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true} gras={true}>
+            <TitleContainer white={true} bold={true}>
               {text3}
             </TitleContainer>
           </div>
           <div>
-            <TitleContainer white={true} gras={true}>
+            <TitleContainer white={true} bold={true}>
               {text4}{' '}
             </TitleContainer>
           </div>

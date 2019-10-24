@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import './TitleContainer.css';
 
-const TitleContainer = ({ children, white, green, textWhite, gras }) => (
+const TitleContainer = ({ children, white, green, textWhite, bold }) => (
   <div
     className={clsx('TitleContainer', {
       'TitleContaine-white': white,
       'TitleContaine-textwhite': textWhite,
       'TitleContainer-green': green,
-      'TitleContainer-gras': gras,
+      'TitleContainer-bold': bold,
     })}
   >
     {children}
@@ -21,7 +21,7 @@ TitleContainer.propTypes = {
   white: PropTypes.bool,
   green: PropTypes.bool,
   textWhite: PropTypes.bool,
-  gras: PropTypes.bool,
+  bold: PropTypes.bool,
 };
 
 export default TitleContainer;

@@ -5,6 +5,7 @@ import Pharmacies from './pages/Pharmacies';
 import Groupement from './pages/Groupement';
 import Partenaires from './pages/Partenaires';
 import Blog from './pages/Blog';
+import Rejoindre from './pages/Rejoindre';
 import './App.css';
 
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
     <Route exact path="/nos-pharmacies" component={Pharmacies} />
     <Route exact path="/nos-partenaires" component={Partenaires} />
     <Route exact path="/notre-blog" component={Blog} />
+    <Route exact path="/contact" component={Rejoindre} />
   </Switch>
 );
 

@@ -1,0 +1,71 @@
+.Rejoindre-Introduction {
+  background: var(--color-grey-light);
+}
+
+.Rejoindre-ContactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding-top: 32px;
+  background: var(--color-grey-light);
+}
+.ContactSection-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 332px;
+  background: var(--color-grey-light);
+}
+.Rejoindre-whiteCobtainer {
+  height: 181px;
+}
+.Text--telNumber {
+  position: absolute;
+  top: 202px;
+}
+
+.ContactSection-textsmall-container {
+  width: 251px;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 752px) {
+  .Rejoindre-ContactSection {
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 332px;
+    padding-top: 0;
+  }
+  .ContactSection-text {
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .Rejoindre-whiteCobtainer {
+    height: 95px;
+  }
+
+  .ContactSection-textsmall-container {
+    width: 360px;
+  }
+  .Text--telNumber {
+    top: 161px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .ContactSection-text {
+    margin-left: 128px;
+  }
+  .Rejoindre-ContactSection {
+    height: 400px;
+  }
+  .Rejoindre-whiteCobtainer {
+    height: 138px;
+  }
+  .Text--telNumber {
+    top: 206px;
+  }
+}

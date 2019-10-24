@@ -30,7 +30,7 @@
   background: var(--color-brand-green);
 }
 
-.TitleContainer-gras {
+.TitleContainer-bold {
   font-weight: bold;
   text-shadow: 0px 0px 2px;
 }

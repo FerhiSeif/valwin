@@ -96,13 +96,13 @@ export default function MenuListComposition() {
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       {' '}
-                      <Link className="Header-menu-item" to="/nos-partenaires ">
+                      <Link className="Header-menu-item" to="/nos-promotions">
                         Nos promotions
                       </Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       {' '}
-                      <Link className="Header-menu-item" to="/nos-partenaires ">
+                      <Link className="Header-menu-item" to="/notre-blog">
                         Notre blog
                       </Link>
                     </MenuItem>

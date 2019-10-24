@@ -12,6 +12,7 @@
 }
 .Header-top-link {
   display: flex;
+  height: 44px;
   margin-left: 33px;
 }
 

@@ -18,7 +18,7 @@ const aticleslist = [
   { img: imageArticle, text: 'Couches bébés 1: pas d’alerte à ce stade.' },
   { img: imageArticle, text: 'Couches bébés 2: pas d’alerte à ce stade.' },
 ];
-const Partenaires = () => {
+const Blog = () => {
   return (
     <Layout>
       <Helmet
@@ -61,4 +61,4 @@ const Partenaires = () => {
   );
 };
 
-export default Partenaires;
+export default Blog;
