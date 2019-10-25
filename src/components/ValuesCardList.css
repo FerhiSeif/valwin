@@ -87,7 +87,7 @@
   }
 
   .ValuesCard-container {
-    width: 219.24px;
+    width: 196px;
     margin-right: 16px;
   }
   .ValuesCard-containerShort {
@@ -107,11 +107,11 @@
 }
 @media only screen and (min-width: 960px) {
   .ValuesCardList-container {
-    width: 754px;
+    width: 709px;
   }
 
   .ValuesCard-container {
-    width: 219.24px;
+    width: 205px;
     margin-right: 16px;
   }
   .ValuesCard-containerShort {

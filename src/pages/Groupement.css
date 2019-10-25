@@ -69,10 +69,20 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 448px) {
-}
 
 @media only screen and (min-width: 752px) {
+  .Groupement-defSection-img {
+    margin-top: 52px;
+  }
+  .Groupement-defSection-text {
+    margin-top: 84px;
+  }
+
+  .Groupement-defSection-container {
+    display: flex;
+    justify-content: space-between;
+    width: 649px;
+  }
   .assembledsection-VirtuesCardList {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +105,13 @@
 }
 
 @media only screen and (min-width: 960px) {
+  .Groupement-defSection-text {
+    margin-top: 194px;
+  }
+
+  .Groupement-defSection-container {
+    width: 895px;
+  }
   .Groupement-defSection-img {
     margin-top: 165px;
   }
@@ -105,7 +122,6 @@
   .Groupement-definition {
     justify-content: space-around;
     height: 348px;
-    padding: 58px 106px;
   }
   .assembledsection-VirtuesCardList {
     width: 960px;

@@ -34,37 +34,40 @@ const Groupement = () => (
       />
     </section>
     <section className="Groupement-definition">
-      <div className="Groupement-defSection-text">
-        <TextComponent green={true}>
-          Qui <span className="TextComponent-bold">somme-nous</span>
-        </TextComponent>
+      <div className="Groupement-defSection-container">
+        <div className="Groupement-defSection-text">
+          <TextComponent green={true}>
+            Qui <span className="TextComponent-bold">somme-nous</span>
+          </TextComponent>
 
-        <TextComponent small={true}>
-          {' '}
-          Nous Sommes un{' '}
-          <span className="TextComponent-bold">
+          <TextComponent small={true}>
             {' '}
-            collectivf autonome et independant{' '}
-          </span>
-        </TextComponent>
-        <br />
-        <TextComponent small={true}>
-          {' '}
-          Nous Sommes un{' '}
-          <span className="TextComponent-bold">
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut
+            Nous Sommes un{' '}
             <span className="TextComponent-bold">
               {' '}
-              labore et dolore magna aliqua{' '}
-            </span>{' '}
-          </span>
-        </TextComponent>
-      </div>
-      <div className="Groupement-defSection-img">
-        <img src={logo} className="logo-pharma" alt="logo normandie pharma" />
-        <img src={pharmadep} className="pharmadep-image" alt="logo immeuble" />
+              collectivf autonome et independant{' '}
+            </span>
+          </TextComponent>
+          <br />
+          <TextComponent small={true}>
+            {' '}
+            Chaque décision est prise dans l'intérêt collectif. Nous négocions
+            ensemble et agissons directement sur le dévloppement de chacun. Le
+            collectif que nous représentons crédibilise les négocions.
+            <br />
+            <span className="TextComponent-bold">
+              Notre partenairiat est gage de réussite.
+            </span>
+          </TextComponent>
+        </div>
+        <div className="Groupement-defSection-img">
+          <img src={logo} className="logo-pharma" alt="logo normandie pharma" />
+          <img
+            src={pharmadep}
+            className="pharmadep-image"
+            alt="logo immeuble"
+          />
+        </div>
       </div>
     </section>
     <section className="Groupement-Virtuessection">
