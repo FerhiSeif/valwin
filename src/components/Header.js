@@ -11,7 +11,10 @@ const Header = () => (
   <header className="Header">
     <div className="Header-top">
       <div className="Header-top-logo">
-        <img src={logo} className="Header-logo" alt="logo normandie pharma" />
+        <Link to="/">
+          {' '}
+          <img src={logo} className="Header-logo" alt="logo normandie pharma" />
+        </Link>
       </div>
       <div className="Header-top-link">
         {/*dropdown*/}

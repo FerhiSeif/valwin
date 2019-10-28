@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 1365px;
   background: rgba(242, 242, 242, 0.7);
 }
 
@@ -11,11 +12,30 @@
   font-family: 'Gotham Rounded';
 }
 
+.Partenaires-whiteCobtainer {
+  height: 619px;
+  background: var(--color-neutral-white);
+}
+
+@media only screen and (min-width: 752px) {
+  .Partenaires-PartnrsList-Container {
+    height: 1000px;
+  }
+  .Partenaires-whiteCobtainer {
+    height: 532px;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .Partenaires-PartnrsList-Container {
+    height: 1300px;
     padding-top: 41px;
   }
+
   .PartnrsList-Container-Title {
     font-size: var(--font-size-large);
+  }
+  .Partenaires-whiteCobtainer {
+    height: 535px;
   }
 }

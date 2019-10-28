@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 471px;
+  height: 414px;
   padding-top: 24px;
 }
 .Valuessection-valuesimage {
@@ -75,6 +75,7 @@
     margin-top: 52px;
   }
   .Groupement-defSection-text {
+    align-items: flex-start;
     margin-top: 84px;
   }
 
@@ -101,11 +102,13 @@
   }
   .Groupement-Valuessection {
     height: 808px;
+    margin-top: 20px;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .Groupement-defSection-text {
+    align-items: flex-start;
     margin-top: 194px;
   }
 
@@ -155,6 +158,7 @@
   }
   .Groupement-Valuessection {
     height: 808px;
+    padding-top: 65px;
   }
   /* .Home-Servicesection-title {
     position: absolute;
@@ -169,6 +173,7 @@
     height: 632px;
   }
   .Groupement-defSection-text {
+    align-items: flex-start;
     width: 408px;
   }
   .Groupement-Virtuessection {

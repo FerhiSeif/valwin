@@ -11,18 +11,18 @@ const Virtues = [
   },
   {
     number: 'O2',
-    title: 'La responsabilité',
-    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+    title: 'Le respect et la confiance',
+    text: 'Pour établir un relation saine au sein de notre réseau',
   },
   {
     number: 'O3',
-    title: 'La responsabilité',
-    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+    title: 'La transparence',
+    text: 'Pour garantir la participation éclairée de chacun',
   },
   {
     number: 'O4',
-    title: 'La responsabilité',
-    text: 'Pour redonner du sens et de l’autonomie au quotidien',
+    title: 'La performance',
+    text: 'Pour gagner en efficacité envers les clients et les labos  ',
   },
 ];
 
@@ -33,17 +33,7 @@ const VirtuesCardList = () =>
         key={i}
         className={`assembledsection-roles assembledsection-roles${color[i]}`}
       >
-        <p
-          className={`assembledsection-roles-Number ${
-            color[i] === 'Green' || color[i] === 'Yellow'
-              ? 'TextWhite'
-              : color[i] === 'YellowLight'
-              ? 'TextYellow'
-              : color[i] === 'GreenLight'
-              ? 'TextGreen'
-              : ''
-          }`}
-        >
+        <p className={`assembledsection-roles-Number TextComponent-bold`}>
           {elem.number}.
         </p>
         <div

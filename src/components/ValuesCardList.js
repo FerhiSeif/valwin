@@ -2,24 +2,25 @@ import React, { Component } from 'react';
 import msg from '../icons/msg.svg';
 import commerce from '../icons/commerce.svg';
 import groupement from '../icons/groupements.svg';
-import suiviPerso from '../icons/suivi-perso.svg';
 import smile from '../icons/Smile.png';
-import negaciation from '../icons/negaciation.svg';
+import negaciation from '../icons/negociation.svg';
+import accompagnement from '../icons/accompagnement.svg';
 import './ValuesCardList.css';
 
 class ValuesCardList extends Component {
   state = {
     articleslist1: [
-      { img: smile, text: 'Une identité commune' },
       { img: groupement, text: 'Un groupement indépendant et transparent ' },
+      ,
+      { img: smile, text: 'Une identité commune' },
     ],
     articleslist2: [
       { img: negaciation, text: 'Négociation direct avec les fournisseurs' },
       { img: commerce, text: 'Opérations commerciales annuelles' },
     ],
     articleslist3: [
-      { img: suiviPerso, text: ' Un accompagnement au quotidien' },
       { img: msg, text: 'Outils de communication opérationnels ' },
+      { img: accompagnement, text: ' Un accompagnement au quotidien' },
     ],
   };
 
@@ -43,8 +44,9 @@ class ValuesCardList extends Component {
               }`}
               alt="image Article"
             />
-            <hr className="ValuesCard-hr" />
+
             <p className="ValuesCard-text"> {article.text}</p>
+            <hr className="ValuesCard-hr" />
           </div>
         );
       });
@@ -66,7 +68,7 @@ class ValuesCardList extends Component {
       <div className="ValuesCardList-container">
         {this._generateElemnts(this.state.articleslist1, true)}
         {this._generateElemnts(this.state.articleslist2, false)}
-        {this._generateElemnts(this.state.articleslist2, true)}
+        {this._generateElemnts(this.state.articleslist3, true)}
       </div>
     );
   }

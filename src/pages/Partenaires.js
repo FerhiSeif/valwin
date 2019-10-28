@@ -29,10 +29,11 @@ const Partenaires = () => {
       </section>
       <section className="Partenaires-PartnrsList-Container">
         <p className="PartnrsList-Container-Title">
-          Nos <span className="TextComponent-bold">valeurs</span>
+          Nos <span className="TextComponent-bold">partenaires</span>
         </p>
         <Partners />
       </section>
+      <div className="Partenaires-whiteCobtainer"></div>
     </Layout>
   );
 };

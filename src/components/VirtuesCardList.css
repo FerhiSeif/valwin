@@ -22,6 +22,7 @@
 
 .assembledsection-roles-Number {
   flex: 1;
+  margin-top: 0;
   font-weight: bold;
   font-family: 'Gotham Rounded';
 }
@@ -52,13 +53,15 @@
   .assembledsection-roles {
     margin: 9px;
   }
+  .assembledsection-roles-Number {
+    font-size: var(--font-size-large);
+  }
 }
 
 @media only screen and (min-width: 960px) {
   .assembledsection-roles {
     width: 369px;
     height: 70px;
-    margin: 23px;
   }
   .assembledsection-roles-Number {
     font-size: var(--font-size-xl);
@@ -68,6 +71,6 @@
     font-size: var(--font-size-med);
   }
   .rolesPargraph-text {
-    font-size: var(--font-size-med);
+    font-size: var(--font-size-sm-2);
   }
 }

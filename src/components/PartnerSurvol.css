@@ -6,26 +6,30 @@
   width: 96px;
   height: 96px;
   margin-right: 20px;
-  border-radius: var(--border-radius);
 }
 .Partners-hr {
   width: 32px;
+  margin-bottom: 6px;
 }
 
 .Partners-title {
   margin: 0;
+  margin-bottom: 4px;
   color: var(--color-neutral-grey);
   font-weight: bold;
   font-size: var(--font-size-xs);
+  text-align: center;
 }
 .Partners-text {
   margin: 0;
+  margin-top: 7px;
   /* margin-bottom: 20px; */
   color: var(--color-neutral-grey-1);
   font-size: var(--font-size-xxs);
 }
 .Partner-pluscircle {
   width: 8px;
+  margin-top: 8px;
 }
 
 /* green component */
@@ -67,8 +71,10 @@
   }
   .Partners-hr {
     width: 48px;
+    margin-bottom: 15px;
   }
   .Partners-title {
+    margin-bottom: 4px;
     font-size: var(--font-size-sm-1);
     line-height: 16px;
   }
@@ -76,7 +82,7 @@
     font-size: var(--font-size-xs);
   }
   .Partner-pluscircle {
-    width: 12px;
-    margin-top: 13px;
+    width: 14px;
+    margin-top: 14px;
   }
 }

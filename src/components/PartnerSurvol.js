@@ -5,11 +5,11 @@ import pluscirclegreen from '../icons/pluscirclegreen.svg';
 
 import './PartnerSurvol.css';
 
-const PartnerSurvol = ({ color }) => {
+const PartnerSurvol = ({ color, mark }) => {
   return (
     <div className={`Partners-hoverdiv Partners-hoverdiv${color}`}>
       <hr className={`Partners-hr Partners-hr${color}`} />
-      <p className={`Partners-title`}>BAYER</p>
+      <p className={`Partners-title TextComponent-bold`}>{mark}</p>
       <p className={`Partners-text`}>Voir les gammes</p>
       <img
         src={
