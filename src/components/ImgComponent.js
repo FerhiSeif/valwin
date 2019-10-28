@@ -6,7 +6,7 @@ import './ImgComponent.css';
 const ImgComponent = ({ urlImg, text1, text2, text3, text4 }) => {
   return (
     <div className="ImgComponent-container">
-      <div style={{ background: `url(${urlImg})` }} className="ImgContainer" />
+      <img src={urlImg} className="ImgContainer" />
       <div className="ImgComponent-text">
         <div>
           <TitleContainer green={true} bold={true}>
