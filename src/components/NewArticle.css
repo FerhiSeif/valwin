@@ -2,7 +2,7 @@
   display: flex;
   width: 326px;
   height: 197px;
-  margin-bottom: 13px;
+  /* margin-bottom: 13px; */
   padding: 1px;
   background: var(--color-neutral-white);
   border: 1px solid var(--color-grey-light);
@@ -46,8 +46,10 @@
   width: 57px;
   height: 11px;
   color: var(--color-neutral-white);
-  font-size: 8px;
+  font-weight: bold;
+  font-size: ver(--font-size-xxs);
   background: var(--color-brand-yellow);
+  border-radius: 2px;
 }
 
 .NewArticleCard-img {
@@ -60,7 +62,7 @@
     flex-direction: column;
     justify-content: left;
     width: 235px;
-    height: 733px;
+    height: 690px;
   }
   .NewArticleCard-img {
     width: 235px;
@@ -69,6 +71,7 @@
   .NewArticleCard-info {
     position: relative;
     width: 93%;
+    margin-left: 10px;
   }
 
   .NewArticleCard-title {
@@ -90,6 +93,7 @@
     top: -17px;
     width: 68px;
     height: 15px;
+    font-size: var(--font-size-xs);
   }
   .NewArticle-Button {
     margin-top: 30px;

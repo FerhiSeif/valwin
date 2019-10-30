@@ -10,6 +10,7 @@
   text-align: center;
   text-align: center;
   border: 1px solid var(--color-neutral-grey);
+  outline: none;
 }
 .Button--medium {
   width: 188px;
@@ -52,16 +53,18 @@
   transition: all 250ms ease;
 }
 .Button--filtre {
-  width: 128px;
-  height: 25px;
+  width: 225px;
+  height: 40px;
   padding: 0;
-  font-size: var(--font-size-xs);
+  font-weight: bold;
+  font-size: var(--font-size-sm-2);
   background: transparent;
+  border: none;
 }
 
 .Button--filtre:hover {
-  color: var(--color-brand-green);
-  background-color: var(--color-grey-light);
+  color: var(--color-neutral-grey);
+  background-color: transparent;
 }
 
 .Button--geolocalisation {
@@ -95,16 +98,9 @@
   display: block;
 }
 
-.Button--filtre:hover .icon-filterbtndark {
+/* .Button--filtre:hover .icon-filterbtndark {
   display: none;
-}
-.Button--filtre:hover .icon-filterbtngreen {
-  display: block;
-}
-
-.icon-filterbtngreen {
-  display: none;
-}
+} */
 
 .Button--filtre:active .optionfilter {
   display: block;
@@ -121,12 +117,12 @@
     font-size: var(--font-size-med-1);
   }
 
-  .Button--filtre {
+  /* .Button--filtre {
     width: 225px;
     height: 40px;
     font-weight: bold;
     font-size: var(--font-size-sm-2);
-  }
+  } */
 
   .icon-filterUpbtndark {
     margin-left: 6px;

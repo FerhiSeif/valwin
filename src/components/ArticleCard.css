@@ -13,7 +13,7 @@
   padding: 1px;
   background: var(--color-neutral-white);
   border: 1px solid var(--color-grey-light);
-  box-shadow: 3px 3px 6px -5px var(--color-neutral-grey-2);
+  box-shadow: 0px 3px 5px -4px var(--color-neutral-grey-2);
 }
 .ArticleCardComponent-Img {
   width: 158px;
@@ -26,6 +26,9 @@
   margin-left: 10px;
   border: 1px solid var(--color-brand-yellow);
 }
+.ArticleCardComponent:hover {
+  border: 1px solid var(--color-brand-yellow);
+}
 
 @media only screen and (min-width: 752px) {
   .ArticleCardComponent-text {
@@ -35,7 +38,7 @@
   }
   .ArticleCardComponent {
     width: 236px;
-    height: 312px;
+    height: 290px;
   }
   .ArticleCardComponent-Img {
     width: 235px;

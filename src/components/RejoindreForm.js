@@ -34,8 +34,9 @@ class RejoindreForm extends Component {
           name="message"
           placeholder="Votre message"
         />
-        <div className="RejoindreForm_btnContainer"></div>
-        <Button small={true}>Envoyer</Button>
+        <div className="RejoindreForm_btnContainer">
+          <Button small={true}>Envoyer</Button>
+        </div>
       </form>
     );
   }

@@ -20,6 +20,8 @@ class FilterButton extends React.Component {
     this.state = {
       isVisible: false,
       searchtext: '',
+      elemntactive: false,
+      index: '',
     };
   }
 
@@ -27,16 +29,48 @@ class FilterButton extends React.Component {
     e.preventDefault();
     this.setState({
       isVisible: !this.state.isVisible,
+      index: '',
+      elemntactive: false,
     });
   }
 
+  activesearch = (index) => {
+    this.setState(
+      {
+        index: '',
+        elemntactive: false,
+      },
+      () => {
+        this.setState({
+          index,
+          elemntactive: !this.state.elemntactive,
+        });
+      }
+    );
+  };
+
   renderDropdown() {
+    const { elemntactive, index } = this.state;
+    console.log('elm : ' + elemntactive + 'indice ' + index);
     return (
       <ul className="FilterButton-dropdown">
         {serchlist.map((elm, i) => (
-          <li className="FilterButton-menuItem">
-            <button className="FilterBtn-menuItem-icon"></button>
-            <span className="FilterBtn-menuItem-text">{elm}</span>
+          <li
+            className="FilterButton-menuItem"
+            onClick={() => this.activesearch(i)}
+          >
+            <button
+              className={`FilterBtn-menuItem-icon ${
+                elemntactive == true && i === index ? 'activebottom' : ''
+              }`}
+            ></button>
+            <span
+              className={`FilterBtn-menuItem-text ${
+                elemntactive == true && i === index ? 'activeTextSearch' : ''
+              }`}
+            >
+              {elm}
+            </span>
           </li>
         ))}
       </ul>
@@ -64,11 +98,6 @@ class FilterButton extends React.Component {
               <img
                 className="icon-filterbtndark"
                 src={filterbtnDown}
-                alt="filter button icon"
-              />
-              <img
-                className="icon-filterbtngreen"
-                src={filterbtnDownSurvol}
                 alt="filter button icon"
               />
             </span>

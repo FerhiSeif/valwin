@@ -24,7 +24,7 @@ const Button = ({
     })}
     onClick={onClick}
   >
-    <span className="TextButton"> {children} </span>
+    <span className="TextButton TextComponent-bold"> {children} </span>
   </button>
 );
 

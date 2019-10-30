@@ -29,15 +29,15 @@ const Rejoindre = () => {
       </section>
       <section className="Rejoindre-ContactSection">
         <div className="ContactSection-text">
-          <TextComponent green={true}>
+          <p className="Rejoindre-title">
             Vous voulez être{' '}
             <span className="TextComponent-bold"> adhérent</span>
-          </TextComponent>
+          </p>
           <div className="ContactSection-textsmall-container">
-            <TextComponent small={true}>
+            <p className="ContactSection-textsmall">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua{' '}
-            </TextComponent>
+            </p>
           </div>
           <TextComponent telNumber={true}>
             <span className="TextComponent-bold">06 11 22 33 44</span>

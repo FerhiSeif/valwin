@@ -30,7 +30,7 @@ const Blog = () => {
           },
         ]}
       ></Helmet>
-      <section className="Partenaires-Introduction">
+      <section className="Blog-Introduction">
         <ImgComponent
           urlImg={introImg}
           text1="Choix et qualité"
@@ -42,7 +42,7 @@ const Blog = () => {
       <section className="Blog-ArticleListe-section">
         <div className="Blog-ArticleListe-Container">
           <p className="PartnrsList-Container-Title">
-            Nos <span className="TextComponent-bold">valeurs</span>
+            Toutes nos <span className="TextComponent-bold"> articles</span>
           </p>
           <FilterButton />
 
@@ -57,6 +57,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      <div className="Blog-whiteCobtainer"></div>
     </Layout>
   );
 };

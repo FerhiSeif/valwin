@@ -1,3 +1,6 @@
+.Blog-Introduction {
+  background: var(--color-grey-light);
+}
 .Blog-ArticleListe-Container {
   display: flex;
   flex-direction: column;
@@ -12,6 +15,13 @@
 }
 .Blog-NewArticleCard {
   margin-top: 15px;
+}
+.Blog-ArticleListe-section {
+  height: 361px;
+}
+.Blog-whiteCobtainer {
+  height: 730px;
+  background: var(--color-neutral-white);
 }
 @media only screen and (min-width: 752px) {
   .Blog-NewArticleCard {

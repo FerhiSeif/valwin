@@ -1,7 +1,12 @@
 .Rejoindre-Introduction {
   background: var(--color-grey-light);
 }
-
+.Rejoindre-title {
+  margin-bottom: 0;
+  color: var(--color-brand-green);
+  font-size: var(--font-size-med-1);
+  text-align: center;
+}
 .Rejoindre-ContactSection {
   display: flex;
   flex-direction: column;
@@ -23,7 +28,13 @@
 }
 .Text--telNumber {
   position: absolute;
-  top: 202px;
+  top: 180px;
+}
+.ContactSection-text {
+  margin: 0;
+  color: var(--color-neutral-grey-2);
+  font-size: var(--font-size-med);
+  text-align: center;
 }
 
 .ContactSection-textsmall-container {
@@ -52,6 +63,9 @@
   }
   .Text--telNumber {
     top: 161px;
+  }
+  .ContactSection-textsmall {
+    text-align: left;
   }
 }
 
