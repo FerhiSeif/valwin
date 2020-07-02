@@ -51,7 +51,6 @@ class FilterButton extends React.Component {
 
   renderDropdown() {
     const { elemntactive, index } = this.state;
-    console.log('elm : ' + elemntactive + 'indice ' + index);
     return (
       <ul className="FilterButton-dropdown">
         {serchlist.map((elm, i) => (
